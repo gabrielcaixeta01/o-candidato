@@ -1,0 +1,27 @@
+[
+  {
+    "data": "2026-08-15",
+    "rotulo": "Prazo final de registro",
+    "detalhe": "Encerrou às 19h o prazo para partidos apresentarem candidaturas ao TSE."
+  },
+  {
+    "data": "2026-08-16",
+    "rotulo": "Início da propaganda eleitoral",
+    "detalhe": "Inclusive na internet."
+  },
+  {
+    "data": "2026-08-28",
+    "rotulo": "Horário eleitoral no rádio e na TV",
+    "detalhe": "Exibição do 1º turno vai até 1º de outubro."
+  },
+  {
+    "data": "2026-10-04",
+    "rotulo": "1º turno",
+    "detalhe": "Data fixada pela Constituição."
+  },
+  {
+    "data": "2026-10-25",
+    "rotulo": "2º turno",
+    "detalhe": "Caso nenhum candidato alcance maioria absoluta no 1º turno."
+  }
+]

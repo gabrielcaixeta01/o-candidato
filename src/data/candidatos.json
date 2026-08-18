@@ -1,0 +1,151 @@
+[
+  {
+    "nome": "Clariana Barão",
+    "partido": "DC",
+    "numero": 27,
+    "vice": "Fabiana Torquato (DC)",
+    "idade": 39,
+    "foto": null,
+    "bio": "Advogada e presidente do diretório do Democracia Cristã em Mato Grosso. Disputa seu primeiro cargo eletivo.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Edmilson Costa",
+    "partido": "PCB",
+    "numero": 21,
+    "vice": "Cleusa Santos (PCB)",
+    "idade": null,
+    "foto": null,
+    "bio": "Doutor em Economia pela Unicamp e dirigente histórico do PCB, militante da legenda desde os anos 1970. Foi candidato a vice-presidente em 2010.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Escritor Augusto Cury",
+    "nomeCompleto": "Augusto Jorge Cury",
+    "partido": "Avante",
+    "numero": 70,
+    "vice": "Júlio Delgado (Avante)",
+    "idade": 67,
+    "foto": null,
+    "bio": "Psiquiatra, escritor e empresário, autor de livros de psicologia publicados em mais de 70 países. Estreia em disputas eleitorais em 2026.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Flávio Bolsonaro",
+    "partido": "PL",
+    "numero": 22,
+    "vice": "Alfredo Gaspar (PL)",
+    "idade": 45,
+    "foto": null,
+    "bio": "Senador pelo Rio de Janeiro desde 2019, advogado e empresário. Cumpriu quatro mandatos consecutivos como deputado estadual antes de chegar ao Senado.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Hertz Dias",
+    "partido": "PSTU",
+    "numero": 16,
+    "vice": "Vanessa Portugal (PSTU)",
+    "idade": 55,
+    "foto": null,
+    "bio": "Professor de História, rapper e militante do movimento negro. Foi candidato a vice-presidente em 2018 e ao governo do Maranhão em 2022.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Lula",
+    "nomeCompleto": "Luiz Inácio Lula da Silva",
+    "partido": "PT",
+    "numero": 13,
+    "vice": "Geraldo Alckmin (PSB)",
+    "idade": 80,
+    "foto": null,
+    "bio": "Presidente da República desde 2023, cargo que já ocupou entre 2003 e 2010. Ex-metalúrgico e ex-dirigente sindical, foi deputado federal por São Paulo.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Pablo Marçal",
+    "partido": "PRTB",
+    "numero": 28,
+    "vice": "Leonardo Avalanche (PRTB)",
+    "idade": 39,
+    "foto": null,
+    "bio": "Empresário e influenciador digital, disputou a Prefeitura de São Paulo em 2024. Havia tentado concorrer à Presidência em 2022, pelo Pros.",
+    "temas": [],
+    "planoGoverno": null,
+    "observacao": "Declarado inelegível pelo TRE-SP. O pedido de registro foi protocolado e será analisado pela Justiça Eleitoral."
+  },
+  {
+    "nome": "Renan Santos",
+    "partido": "Missão",
+    "numero": 14,
+    "vice": "Coronel Aroldo Medina (Missão)",
+    "idade": 42,
+    "foto": null,
+    "bio": "Fundador do Movimento Brasil Livre (MBL) e presidente nacional do Missão, partido registrado pelo TSE em 2025. Empresário, nunca exerceu cargo eletivo.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Ronaldo Caiado",
+    "partido": "PSD",
+    "numero": 55,
+    "vice": "Gilberto Kassab (PSD)",
+    "idade": 76,
+    "foto": null,
+    "bio": "Médico, governou Goiás entre 2019 e 2026. Foi deputado federal e senador, e já havia disputado a Presidência em 1989.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Rui Costa Pimenta",
+    "partido": "PCO",
+    "numero": 29,
+    "vice": "Antônio Carlos Silva (PCO)",
+    "idade": 69,
+    "foto": null,
+    "bio": "Jornalista e presidente nacional do PCO. Participou da fundação do PT e concorreu à Presidência em 2002, 2010 e 2014.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Samara",
+    "nomeCompleto": "Samara Martins",
+    "partido": "UP",
+    "numero": 80,
+    "vice": "Raquel Brício (UP)",
+    "idade": 38,
+    "foto": null,
+    "bio": "Dentista do SUS, atua em movimentos populares, de mulheres e do movimento negro. Foi candidata a vice-presidente pela Unidade Popular em 2022.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Veterinário Wilson Grassi",
+    "nomeCompleto": "Wilson Grassi",
+    "partido": "Democrata",
+    "numero": 35,
+    "vice": "Suêd Haidar (Democrata)",
+    "idade": 55,
+    "foto": null,
+    "bio": "Veterinário com atuação pública voltada à defesa e à proteção animal. Disputou eleições para vereador, deputado estadual e deputado federal.",
+    "temas": [],
+    "planoGoverno": null
+  },
+  {
+    "nome": "Zema",
+    "nomeCompleto": "Romeu Zema Neto",
+    "partido": "Novo",
+    "numero": 30,
+    "vice": "Eduardo Girão (Novo)",
+    "idade": 61,
+    "foto": null,
+    "bio": "Empresário, governou Minas Gerais entre 2019 e 2026. Formado em Administração pela FGV, atuou por quase três décadas no Grupo Zema.",
+    "temas": [],
+    "planoGoverno": null
+  }
+]

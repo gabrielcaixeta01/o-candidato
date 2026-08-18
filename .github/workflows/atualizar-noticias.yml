@@ -1,0 +1,51 @@
+name: Atualizar notícias
+
+# Semanalmente, segunda-feira às 09:00 UTC (06:00 em Brasília).
+# O commit gerado dispara o redeploy automático na Vercel.
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+# Só o necessário para commitar de volta no repositório.
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-noticias
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Sem `npm ci`: o script não tem dependências.
+      - name: Buscar notícias
+        env:
+          FONTE_NOTICIAS: ${{ vars.FONTE_NOTICIAS }}
+          RSS_TEMPLATE: ${{ vars.RSS_TEMPLATE }}
+          NEWSAPI_URL: ${{ vars.NEWSAPI_URL }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          MAX_POR_CANDIDATO: ${{ vars.MAX_POR_CANDIDATO }}
+          JANELA_DIAS: ${{ vars.JANELA_DIAS }}
+        run: node scripts/fetch-noticias.mjs
+
+      - name: Commitar se houver mudança
+        run: |
+          if git diff --quiet -- src/data/noticias.json; then
+            echo "Nenhuma manchete nova; nada a commitar."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/noticias.json
+          git commit -m "chore(dados): atualiza notícias dos candidatos"
+          git push
