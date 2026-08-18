@@ -2,26 +2,24 @@ import { formatarData } from "@/lib/candidatos";
 
 /**
  * Rodapé com os avisos legais e metodológicos exigidos pelo projeto:
- * origem dos dados, critério de ordenação e ressalva sobre registros
- * ainda em análise na Justiça Eleitoral.
+ * origem dos dados, critério de ordenação, tratamento das notícias e das
+ * fotos, e ressalva sobre registros ainda em análise na Justiça Eleitoral.
  */
 export function Rodape({ atualizadoEm }: { atualizadoEm: string | null }) {
   return (
-    <footer className="acima-do-grao mt-auto border-t border-border">
-      <div className="mx-auto w-full max-w-6xl px-6 py-12">
-        <p className="rotulo text-latao-500">O Candidato</p>
+    <footer className="acima-do-grao mt-auto border-t border-border bg-papel-100">
+      <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 sm:py-16">
+        <div className="mb-8 flex items-center gap-3">
+          <span aria-hidden className="h-px w-8 bg-bronze-500/50 sm:w-12" />
+          <p className="rotulo text-bronze-500">O Candidato</p>
+        </div>
 
-        <div className="mt-6 grid gap-6 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-10 gap-y-6 text-sm leading-relaxed text-tinta-500 sm:grid-cols-2 lg:grid-cols-3">
           <p>
             Os dados de cada candidatura vêm de fontes públicas — registros do{" "}
-            <a
-              href="https://www.tse.jus.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground/80 underline decoration-dotted underline-offset-2 hover:text-latao-400"
-            >
+            <LinkRodape href="https://www.tse.jus.br/">
               Tribunal Superior Eleitoral
-            </a>{" "}
+            </LinkRodape>{" "}
             e cobertura da imprensa.
           </p>
 
@@ -38,14 +36,18 @@ export function Rodape({ atualizadoEm }: { atualizadoEm: string | null }) {
           </p>
 
           <p>
-            As notícias são exibidas apenas como manchete, veículo, data e link.
-            O texto das matérias não é reproduzido — a leitura acontece no site
-            do veículo original.
+            As notícias aparecem apenas como manchete, veículo, data e link. O
+            texto das matérias não é reproduzido — a leitura acontece no site do
+            veículo original.
           </p>
 
           <p>
-            As fotos são oficiais e trazem o crédito e a licença de cada fonte
-            junto ao perfil do candidato.
+            As fotos vêm do{" "}
+            <LinkRodape href="https://commons.wikimedia.org/">
+              Wikimedia Commons
+            </LinkRodape>{" "}
+            sob licenças livres, com crédito e licença informados no perfil de
+            cada candidato.
           </p>
 
           {atualizadoEm && (
@@ -60,5 +62,24 @@ export function Rodape({ atualizadoEm }: { atualizadoEm: string | null }) {
         </div>
       </div>
     </footer>
+  );
+}
+
+function LinkRodape({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-tinta-700 underline decoration-dotted underline-offset-2 transition hover:text-bronze-500"
+    >
+      {children}
+    </a>
   );
 }

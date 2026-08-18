@@ -1,7 +1,11 @@
 import { Galeria } from "@/components/Galeria";
 import { Hero } from "@/components/Hero";
 import { Rodape } from "@/components/Rodape";
-import { listarCalendario, listarCandidatos, lerNoticias } from "@/lib/candidatos";
+import {
+  lerNoticias,
+  listarCalendario,
+  listarCandidatos,
+} from "@/lib/candidatos";
 
 export default function Home() {
   // Tudo vem de JSON versionado no repositório: a página é estática e o
@@ -12,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero calendario={calendario} />
+      <Hero calendario={calendario} totalCandidaturas={candidatos.length} />
       <Galeria candidatos={candidatos} noticiasPorCandidato={porCandidato} />
       <Rodape atualizadoEm={atualizadoEm} />
     </>

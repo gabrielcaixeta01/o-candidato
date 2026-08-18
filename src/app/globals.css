@@ -5,10 +5,16 @@
 /*
   "O Candidato" — identidade visual.
 
-  Fundo tinta profundo com grão sutil; acento único latão, usado com parcimônia.
-  O design é deliberadamente monotema (escuro): a paleta é parte do argumento
-  editorial de neutralidade, então não há variante clara nem alternância.
-  Nenhuma cor partidária aparece em lugar nenhum da interface.
+  Registro visual: papel institucional. Fundo off-white quente, hairlines finas,
+  serifa editorial nos títulos. A leitura vem primeiro — o fundo claro existe
+  para sustentar blocos longos de texto factual sem cansar.
+
+  Neutralidade: o único acento é bronze (#8a6a2f), escolhido justamente por não
+  pertencer a nenhum partido brasileiro. Nenhuma cor partidária aparece em
+  lugar nenhum, e nenhum candidato recebe tratamento cromático próprio.
+
+  Monotema por decisão: sem variante escura e sem alternância, para que não
+  exista uma segunda diagramação onde a paridade entre candidatos possa quebrar.
 */
 
 @theme inline {
@@ -20,17 +26,23 @@
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-spectral);
 
-  /* Tinta — fundo e superfícies elevadas. */
-  --color-tinta-900: #0a1020;
-  --color-tinta-800: #0e1524;
-  --color-tinta-700: #141c2e;
-  --color-tinta-600: #1b2439;
-  --color-tinta-500: #263049;
+  /* Papel — fundo e superfícies. */
+  --color-papel-50: #ffffff;
+  --color-papel-100: #faf9f6;
+  --color-papel-200: #f4f2ec;
+  --color-papel-300: #eae7de;
+  --color-papel-400: #ddd9cd;
 
-  /* Latão — acento único. */
-  --color-latao-400: #dcbc6d;
-  --color-latao-500: #c8a24b;
-  --color-latao-600: #a8843a;
+  /* Tinta — texto e traços. */
+  --color-tinta-400: #8b93a1;
+  --color-tinta-500: #5c6472;
+  --color-tinta-700: #2b313c;
+  --color-tinta-900: #14181f;
+
+  /* Bronze — acento único. */
+  --color-bronze-400: #a8853f;
+  --color-bronze-500: #8a6a2f;
+  --color-bronze-600: #6f5424;
 
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -58,31 +70,32 @@
 }
 
 :root {
-  --background: #0e1524;
-  --foreground: #eef1f6;
+  --background: #faf9f6;
+  --foreground: #14181f;
 
-  --card: #141c2e;
-  --card-foreground: #eef1f6;
-  --popover: #141c2e;
-  --popover-foreground: #eef1f6;
+  --card: #ffffff;
+  --card-foreground: #14181f;
+  --popover: #ffffff;
+  --popover-foreground: #14181f;
 
-  --primary: #c8a24b;
-  --primary-foreground: #0a1020;
-  --secondary: #1b2439;
-  --secondary-foreground: #eef1f6;
+  /* Bronze a 4.99:1 sobre branco — passa AA para texto normal. */
+  --primary: #8a6a2f;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f2ec;
+  --secondary-foreground: #2b313c;
 
-  --muted: #1b2439;
-  --muted-foreground: #939db4;
-  --accent: #1b2439;
-  --accent-foreground: #dcbc6d;
+  --muted: #f4f2ec;
+  --muted-foreground: #5c6472;
+  --accent: #f4f2ec;
+  --accent-foreground: #6f5424;
 
-  --destructive: #d4614f;
+  --destructive: #b3402c;
 
-  --border: rgb(255 255 255 / 9%);
-  --input: rgb(255 255 255 / 12%);
-  --ring: #c8a24b;
+  --border: #eae7de;
+  --input: #ddd9cd;
+  --ring: #8a6a2f;
 
-  /* Cantos bem arredondados, ~20px na escala xl. */
+  /* Cantos arredondados, ~20px na escala xl. */
   --radius: 1.25rem;
 }
 
@@ -94,24 +107,23 @@
   html {
     @apply font-sans;
     scroll-behavior: smooth;
-    /* Impede o "salto" de layout quando a bottom sheet trava o scroll. */
+    /* Reserva a calha da barra de rolagem: sem isso, travar o scroll para
+       abrir a folha desloca a página inteira alguns pixels. */
     scrollbar-gutter: stable;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-background text-foreground;
-    /* Vinheta sutil: o fundo respira sem virar gradiente decorativo. */
-    background-image: radial-gradient(
-      ellipse 90% 55% at 50% 0%,
-      #16203a 0%,
-      transparent 70%
-    );
-    background-attachment: fixed;
+    /* Clareia o topo da página o suficiente para separar o hero da galeria. */
+    background-image: linear-gradient(180deg, #ffffff 0%, #faf9f6 34rem);
+    background-repeat: no-repeat;
   }
 
   /*
-    Grão de filme. feTurbulence renderizado uma vez como data URI e fixado
-    sobre o fundo — sem custo de runtime e sem entrar no fluxo de eventos.
+    Grão de papel. feTurbulence renderizado uma vez como data URI e fixado
+    sobre o fundo — sem custo de runtime e fora do fluxo de eventos.
+    Em fundo claro o ruído precisa ser bem mais discreto do que em fundo escuro.
   */
   body::before {
     content: "";
@@ -120,16 +132,17 @@
     z-index: 0;
     pointer-events: none;
     opacity: 0.5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.28'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
   }
 
   ::selection {
-    background: var(--color-latao-500);
+    background: #e8dcc0;
     color: var(--color-tinta-900);
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-latao-500);
+    outline: 2px solid var(--color-bronze-500);
     outline-offset: 2px;
   }
 }
@@ -137,15 +150,24 @@
 @layer components {
   /* Régua de letras espaçadas usada em rótulos institucionais. */
   .rotulo {
-    @apply text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-muted-foreground;
+    @apply text-[0.6875rem] font-semibold tracking-[0.16em] text-tinta-500 uppercase;
   }
 }
 
 @layer utilities {
-  /* Impede que o grão fique atrás do conteúdo. */
+  /* Mantém o conteúdo acima da camada de grão. */
   .acima-do-grao {
     position: relative;
     z-index: 1;
+  }
+
+  /* Esconde a barra de rolagem de trilhos horizontais sem travar o gesto. */
+  .sem-barra {
+    scrollbar-width: none;
+  }
+
+  .sem-barra::-webkit-scrollbar {
+    display: none;
   }
 }
 

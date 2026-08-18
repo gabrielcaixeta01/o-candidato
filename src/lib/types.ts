@@ -8,13 +8,19 @@
 
 /** Crédito de imagem. Obrigatório sempre que houver `url` (exigência legal). */
 export interface CreditoFoto {
-  /** URL da imagem. Pode ser remota (ver `remotePatterns` em next.config.ts). */
+  /**
+   * Caminho da imagem em `public/candidatos/`.
+   *
+   * As fotos são versionadas no repositório em vez de carregadas do acervo de
+   * origem: hotlinkar o Wikimedia pelo otimizador do Next leva a HTTP 429 em
+   * cache frio, e uma foto que some é pior que uma foto pesada.
+   */
   url: string;
-  /** Autoria/veículo, ex.: "Agência Brasil". */
+  /** Autoria/veículo, ex.: "Ricardo Stuckert/PR". */
   credito: string;
-  /** Licença, ex.: "CC BY 3.0 BR". */
+  /** Licença, ex.: "CC BY 2.0". */
   licenca: string;
-  /** Link para a página original da foto, para auditoria. */
+  /** Link para a página original da foto, para auditoria e atribuição. */
   origem?: string;
 }
 

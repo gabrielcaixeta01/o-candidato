@@ -29,25 +29,37 @@ Tudo vive em JSON versionado. A página é estática e só muda quando o JSON mu
 
 Os tipos estão em [`src/lib/types.ts`](src/lib/types.ts), com a regra de cada campo.
 
-### Adicionar a foto de um candidato
+### Fotos
 
-O campo `foto` começa `null` em todas as candidaturas — sem foto, o card cai num
-retrato de iniciais com a mesma proporção 3:4, então a diagramação não muda.
+As 13 fotos vêm do Wikimedia Commons sob licença livre (CC BY, CC BY-SA ou
+Attribution) e ficam **versionadas** em `public/candidatos/`, a 800px de largura,
+~2,2 MB no total.
 
-Para preencher, use uma imagem oficial de licença aberta (Agência Brasil, TSE ou
-Wikimedia Commons) e informe sempre crédito e licença — é exigência da licença,
-não enfeite:
+Ficam no repositório de propósito: servidas direto do Wikimedia, o otimizador do
+Next tomava HTTP 429 em cache frio e parte dos retratos não carregava. Uma foto
+que some quebra a paridade visual entre as candidaturas, que é justamente o que o
+projeto precisa garantir.
+
+Para trocar uma foto, salve o arquivo em `public/candidatos/` e aponte o campo:
 
 ```json
 "foto": {
-  "url": "https://agenciabrasil.ebc.com.br/.../foto.jpg",
+  "url": "/candidatos/fulano.jpg",
   "credito": "Fulano de Tal/Agência Brasil",
   "licenca": "CC BY 3.0 BR",
-  "origem": "https://agenciabrasil.ebc.com.br/politica/noticia/..."
+  "origem": "https://commons.wikimedia.org/wiki/File:..."
 }
 ```
 
-O host precisa estar em `images.remotePatterns` no [`next.config.ts`](next.config.ts).
+`credito` e `licenca` são obrigatórios — são exigência das licenças, não enfeite,
+e aparecem na aba Perfil. Para usar um host externo, declare-o em
+`images.remotePatterns` no [`next.config.ts`](next.config.ts).
+
+Com `foto: null` o card cai num retrato de iniciais na mesma proporção 3:4, então
+a diagramação não muda.
+
+> A foto do Renan Santos é a única sem retrato institucional disponível no acervo
+> livre — é uma foto de 2018 auto-publicada. Vale trocar se aparecer uma oficial.
 
 ### Temas e planos de governo
 
@@ -91,9 +103,17 @@ Escolhas de produto que existem para sustentar a neutralidade — não são deta
 de implementação e não devem ser "otimizadas" sem intenção:
 
 - A única ordenação exposta é alfabética pelo nome de urna registrado no TSE.
+  O filtro de busca remove itens, mas nunca reordena — ordenar por relevância
+  criaria um ranking implícito.
 - Cards têm foto na mesma proporção, número na mesma posição e bio com altura
   fixa de duas linhas, para que nenhuma candidatura pareça mais importante.
-- Latão (`#c8a24b`) é o único acento, e nenhuma cor partidária aparece.
+- Os retratos são exibidos em preto-e-branco (ganham cor no hover). As fotos vêm
+  de fontes distintas, e a dessaturação impede que um retrato de estúdio salte
+  sobre um registro de evento.
+- Bronze (`#8a6a2f`) é o único acento, escolhido por não pertencer a nenhum
+  partido brasileiro. Nenhuma cor partidária aparece em lugar nenhum.
+- Tema claro único, sem variante escura: uma segunda diagramação seria mais um
+  lugar onde a paridade entre candidatos poderia quebrar.
 - Campos sem fonte confirmada mostram travessão em vez de estimativa.
 - `observacao` descreve andamento processual objetivo (ex.: registro em análise),
   nunca o mérito da candidatura.

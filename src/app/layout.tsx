@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 
 // themeColor vive em `viewport`, não em `metadata` (depreciado desde o Next 14).
 export const viewport: Viewport = {
-  themeColor: "#0e1524",
-  colorScheme: "dark",
+  themeColor: "#faf9f6",
+  colorScheme: "light",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
