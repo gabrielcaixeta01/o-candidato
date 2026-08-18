@@ -1,11 +1,18 @@
 import candidatosData from "@/data/candidatos.json";
 import noticiasData from "@/data/noticias.json";
 import calendarioData from "@/data/calendario.json";
+import propostasData from "@/data/propostas.json";
+import espectroData from "@/data/espectro.json";
 import type {
+  ArquivoEspectro,
   ArquivoNoticias,
+  ArquivoPropostas,
   Candidato,
+  ClassificacaoEspectro,
   EventoEleitoral,
+  FonteEspectro,
   Noticia,
+  Proposta,
 } from "@/lib/types";
 
 /**
@@ -39,6 +46,38 @@ export function vizinhosDe(candidato: Candidato): {
     anterior: i > 0 ? lista[i - 1] : null,
     proximo: i >= 0 && i < lista.length - 1 ? lista[i + 1] : null,
   };
+}
+
+/** Capítulos do plano de governo. Vazio quando não há plano registrado. */
+export function propostasDe(candidato: Candidato): Proposta[] {
+  return (propostasData as ArquivoPropostas)[candidato.slug] ?? [];
+}
+
+/**
+ * Classificações do partido no espectro político, já com a fonte resolvida.
+ *
+ * Devolve lista vazia quando nenhuma das fontes consultadas classificou o
+ * partido — caso dos registrados em 2025, que são mais novos que os
+ * levantamentos. A ficha diz isso em vez de arriscar um palpite.
+ */
+export function espectroDe(
+  candidato: Candidato,
+): { fonte: FonteEspectro; rotulo: string }[] {
+  const { fontes, porPartido } = espectroData as unknown as ArquivoEspectro;
+  const lista: ClassificacaoEspectro[] = porPartido[candidato.partido] ?? [];
+
+  return lista.flatMap((c) => {
+    const fonte = fontes.find((f) => f.id === c.fonte);
+    return fonte ? [{ fonte, rotulo: c.rotulo }] : [];
+  });
+}
+
+export function fontesEspectro(): {
+  fontes: FonteEspectro[];
+  compilacao: string;
+} {
+  const { fontes, compilacao } = espectroData as unknown as ArquivoEspectro;
+  return { fontes, compilacao };
 }
 
 export function listarCalendario(): EventoEleitoral[] {
@@ -87,7 +126,7 @@ export function filtrarCandidatos(
       c.vice,
       c.bio,
       c.ocupacao,
-      ...c.temas,
+      ...propostasDe(c).map((p) => p.titulo),
     ];
     return campos.some((campo) => normalizar(campo).includes(termo));
   });

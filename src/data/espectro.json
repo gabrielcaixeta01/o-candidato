@@ -1,0 +1,79 @@
+{
+  "_nota": "Classificações de terceiros sobre o PARTIDO, não sobre a pessoa candidata. Não são dado do TSE e não há classificação oficial no Brasil. Compiladas da tabela 'Lista de partidos políticos do Brasil' da Wikipédia, que reúne as fontes abaixo. Reproduzimos o rótulo exatamente como cada fonte publicou. Partidos sem linha em uma fonte não foram classificados por ela.",
+  "fontes": [
+    {
+      "id": "couto",
+      "nome": "Cláudio Couto",
+      "ano": 2018,
+      "descricao": "Cientista político da FGV, em levantamento publicado pelo Estadão",
+      "url": "https://politica.estadao.com.br/noticias/eleicoes,o-que-significam-direita-esquerda-e-centro-na-politica,70002314116"
+    },
+    {
+      "id": "congresso-em-foco",
+      "nome": "Congresso em Foco",
+      "ano": 2019,
+      "descricao": "Levantamento sobre a composição ideológica do Congresso",
+      "url": "https://congressoemfoco.uol.com.br/legislativo/direita-cresce-e-engole-o-centro-no-congresso-mais-fragmentado-da-historia/"
+    },
+    {
+      "id": "valor",
+      "nome": "Valor Econômico",
+      "ano": 2025,
+      "descricao": "Levantamento sobre como os partidos se definem",
+      "url": "https://valor.globo.com/politica/eleicoes-2024/noticia/2024/10/04/de-direita-ou-esquerda-veja-como-os-partidos-politicos-se-definem-no-brasil.ghtml"
+    }
+  ],
+  "compilacao": "https://pt.wikipedia.org/wiki/Lista_de_partidos_pol%C3%ADticos_do_Brasil",
+  "porPartido": {
+    "Avante": [
+      { "fonte": "congresso-em-foco", "rotulo": "centro" },
+      { "fonte": "valor", "rotulo": "centro" }
+    ],
+    "DC": [
+      { "fonte": "congresso-em-foco", "rotulo": "direita" },
+      { "fonte": "valor", "rotulo": "visão independente" }
+    ],
+    "Democrata": [],
+    "Missão": [],
+    "Novo": [
+      { "fonte": "couto", "rotulo": "direita" },
+      { "fonte": "congresso-em-foco", "rotulo": "direita" },
+      { "fonte": "valor", "rotulo": "direita" }
+    ],
+    "PCB": [
+      { "fonte": "couto", "rotulo": "extrema-esquerda" },
+      { "fonte": "valor", "rotulo": "esquerda" }
+    ],
+    "PCO": [
+      { "fonte": "couto", "rotulo": "extrema-esquerda" },
+      { "fonte": "valor", "rotulo": "extrema-esquerda" }
+    ],
+    "PL": [
+      { "fonte": "couto", "rotulo": "centro-direita" },
+      { "fonte": "congresso-em-foco", "rotulo": "direita" },
+      { "fonte": "valor", "rotulo": "direita" }
+    ],
+    "PRTB": [
+      { "fonte": "couto", "rotulo": "direita" },
+      { "fonte": "congresso-em-foco", "rotulo": "direita" },
+      { "fonte": "valor", "rotulo": "direita" }
+    ],
+    "PSD": [
+      { "fonte": "couto", "rotulo": "centro-direita" },
+      { "fonte": "congresso-em-foco", "rotulo": "direita" },
+      { "fonte": "valor", "rotulo": "centro" }
+    ],
+    "PSTU": [
+      { "fonte": "couto", "rotulo": "extrema-esquerda" },
+      { "fonte": "valor", "rotulo": "esquerda" }
+    ],
+    "PT": [
+      { "fonte": "couto", "rotulo": "esquerda" },
+      { "fonte": "congresso-em-foco", "rotulo": "esquerda" },
+      { "fonte": "valor", "rotulo": "esquerda" }
+    ],
+    "UP": [
+      { "fonte": "valor", "rotulo": "esquerda" }
+    ]
+  }
+}

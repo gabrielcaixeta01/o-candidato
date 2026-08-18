@@ -3,17 +3,21 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ExternalLink, FileText } from "lucide-react";
 import { CreditoFotoLinha, Retrato } from "@/components/Retrato";
+import { Espectro } from "@/components/Espectro";
 import { Rodape } from "@/components/Rodape";
 import {
   candidatoPorSlug,
+  espectroDe,
   formatarData,
+  fontesEspectro,
   idadeDe,
   lerNoticias,
   listarCandidatos,
   noticiasDo,
+  propostasDe,
   vizinhosDe,
 } from "@/lib/candidatos";
-import type { Candidato, Noticia } from "@/lib/types";
+import type { Candidato, Noticia, Proposta } from "@/lib/types";
 
 // As 13 fichas são pré-renderizadas no build. Não há rota dinâmica em
 // produção: o conteúdo só muda quando o JSON muda.
@@ -44,6 +48,9 @@ export default async function PaginaCandidato(
   if (!candidato) notFound();
 
   const noticias = noticiasDo(candidato);
+  const propostas = propostasDe(candidato);
+  const classificacoes = espectroDe(candidato);
+  const { fontes, compilacao } = fontesEspectro();
   const { atualizadoEm } = lerNoticias();
   const { anterior, proximo } = vizinhosDe(candidato);
 
@@ -82,8 +89,25 @@ export default async function PaginaCandidato(
               </div>
             </Secao>
 
-            <Secao id="propostas" titulo="Propostas">
-              <Propostas candidato={candidato} />
+            <Secao
+              id="espectro"
+              titulo="Posicionamento"
+              nota={`Como levantamentos independentes classificam o ${candidato.partido}`}
+            >
+              <Espectro
+                classificacoes={classificacoes}
+                partido={candidato.partido}
+                fontes={fontes}
+                compilacao={compilacao}
+              />
+            </Secao>
+
+            <Secao
+              id="propostas"
+              titulo="Propostas"
+              nota="Capítulos do plano de governo registrado na Justiça Eleitoral"
+            >
+              <Propostas candidato={candidato} propostas={propostas} />
             </Secao>
 
             <Secao id="noticias" titulo="Notícias recentes">
@@ -148,20 +172,30 @@ function Cabecalho({ candidato }: { candidato: Candidato }) {
 /* ------------------------------------------------------------------ propostas */
 
 /**
- * Os temas são os títulos dos capítulos do plano registrado, transcritos do
- * sumário do PDF. Não há resumo do conteúdo: sintetizar propostas obrigaria a
- * escolher o que é relevante, e essa escolha é exatamente o que este site não
- * pode fazer. Quem quiser o teor lê o documento original, linkado abaixo.
+ * Capítulos do plano registrado, com resumo do que cada um propõe.
+ *
+ * O título é transcrito do sumário do PDF; o resumo é redigido por nós e
+ * descreve o que o plano propõe, sem avaliar se é bom, viável ou caro. Todo
+ * resumo usa verbo de atribuição ("propõe", "prevê"), para que fique claro de
+ * quem é a afirmação, e tem extensão semelhante em todas as fichas — dar mais
+ * espaço a uma candidatura já seria uma forma de destaque.
  */
-function Propostas({ candidato }: { candidato: Candidato }) {
-  const { temas, planoGoverno, sqCandidato } = candidato;
+function Propostas({
+  candidato,
+  propostas,
+}: {
+  candidato: Candidato;
+  propostas: Proposta[];
+}) {
+  const { planoGoverno, sqCandidato } = candidato;
 
-  if (temas.length === 0 && !planoGoverno) {
+  if (propostas.length === 0 && !planoGoverno) {
     return (
       <div className="flex flex-col gap-4">
         <Vazio>
           Não consta plano de governo desta candidatura no pacote de propostas
-          publicado pelo TSE.
+          publicado pelo TSE. Sem o documento, não há proposta registrada a
+          resumir.
         </Vazio>
         <LinkTse sq={sqCandidato} />
       </div>
@@ -170,28 +204,35 @@ function Propostas({ candidato }: { candidato: Candidato }) {
 
   return (
     <div className="flex flex-col gap-6">
-      <p className="text-sm text-tinta-500">
-        Títulos dos capítulos do plano de governo registrado na Justiça
-        Eleitoral, transcritos do sumário do documento — nas palavras do próprio
-        candidato, sem resumo nem interpretação.
-      </p>
-
-      <ol className="grid gap-x-6 gap-y-0 sm:grid-cols-2">
-        {temas.map((tema, i) => (
+      <ol className="flex flex-col">
+        {propostas.map((proposta, i) => (
           <li
-            key={tema}
-            className="flex gap-3 border-b border-border/70 py-2.5 text-[0.9375rem] leading-snug text-tinta-700 last:border-b-0 sm:last:border-b"
+            key={proposta.titulo}
+            className="flex gap-3.5 border-b border-border/70 py-4 first:pt-0 last:border-0 sm:gap-4"
           >
             <span
               aria-hidden
-              className="mt-px w-5 shrink-0 text-right font-mono text-xs tabular-nums text-bronze-500/70"
+              className="mt-0.5 w-5 shrink-0 text-right font-mono text-xs tabular-nums text-bronze-500/70"
             >
               {i + 1}
             </span>
-            {tema}
+            <div className="flex min-w-0 flex-col gap-1">
+              <h3 className="text-[0.9375rem] leading-snug font-medium text-tinta-900">
+                {proposta.titulo}
+              </h3>
+              <p className="text-sm leading-relaxed text-tinta-500">
+                {proposta.resumo}
+              </p>
+            </div>
           </li>
         ))}
       </ol>
+
+      <p className="text-xs leading-relaxed text-tinta-400">
+        Títulos transcritos do sumário do plano. Os resumos são redação de O
+        Candidato a partir do texto de cada capítulo e descrevem o que o
+        documento propõe, sem avaliá-lo. O teor exato está no PDF.
+      </p>
 
       {planoGoverno && (
         <div className="flex flex-col gap-3">
@@ -371,15 +412,18 @@ function SetaVizinho({
 function Secao({
   id,
   titulo,
+  nota,
   children,
 }: {
   id: string;
   titulo: string;
+  /** Linha curta que diz de onde vem o conteúdo da seção. */
+  nota?: string;
   children: React.ReactNode;
 }) {
   return (
     <section aria-labelledby={`titulo-${id}`}>
-      <div className="mb-5 flex items-center gap-3">
+      <div className="mb-2 flex items-center gap-3">
         <h2
           id={`titulo-${id}`}
           className="font-serif text-2xl text-tinta-900 sm:text-[1.75rem]"
@@ -388,6 +432,8 @@ function Secao({
         </h2>
         <span aria-hidden className="h-px flex-1 bg-border" />
       </div>
+      {nota && <p className="mb-5 text-sm text-tinta-500">{nota}</p>}
+      {!nota && <div className="mb-5" />}
       {children}
     </section>
   );

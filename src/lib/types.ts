@@ -83,16 +83,6 @@ export interface Candidato {
    * com as palavras dele.
    */
   resumo: string[];
-  /**
-   * Títulos dos capítulos do plano de governo registrado, transcritos
-   * literalmente do sumário do PDF.
-   *
-   * São as palavras do próprio candidato, não uma síntese nossa: resumir
-   * propostas exigiria escolher o que é importante, e essa escolha é
-   * justamente o que este projeto não pode fazer. Vazio quando o candidato
-   * não protocolou plano.
-   */
-  temas: string[];
   /** Plano registrado no TSE. `null` quando não consta do pacote oficial. */
   planoGoverno: PlanoGoverno | null;
   /**
@@ -105,6 +95,53 @@ export interface Candidato {
    * Descreve o andamento no tribunal, nunca o mérito da candidatura.
    */
   observacao?: string;
+}
+
+/**
+ * Um capítulo do plano de governo registrado no TSE.
+ *
+ * `titulo` é transcrito do sumário do PDF, só com a capitalização normalizada.
+ * `resumo` é redigido por este projeto a partir do texto do capítulo, sempre
+ * descrevendo o que o plano propõe — nunca avaliando se é bom, viável ou caro.
+ * Verbos de atribuição ("propõe", "prevê") deixam explícito de quem é a
+ * afirmação. Quem quiser o teor exato lê o PDF, linkado na mesma seção.
+ */
+export interface Proposta {
+  titulo: string;
+  resumo: string;
+}
+
+/** Mapa `slug do candidato` → capítulos do plano. */
+export type ArquivoPropostas = Record<string, Proposta[]>;
+
+/**
+ * Classificação do PARTIDO no espectro esquerda-direita, atribuída a uma fonte.
+ *
+ * Não existe classificação oficial: o TSE não registra posicionamento
+ * ideológico. Por isso o site nunca afirma onde uma candidatura está — mostra o
+ * que fontes identificadas publicaram sobre o partido, com o ano de cada
+ * levantamento, e deixa as divergências entre elas à vista.
+ */
+export interface FonteEspectro {
+  id: string;
+  nome: string;
+  ano: number;
+  descricao: string;
+  url: string;
+}
+
+export interface ClassificacaoEspectro {
+  /** `id` de uma entrada de `fontes`. */
+  fonte: string;
+  /** Rótulo exatamente como a fonte publicou. */
+  rotulo: string;
+}
+
+export interface ArquivoEspectro {
+  fontes: FonteEspectro[];
+  /** Link para a compilação que reúne as fontes. */
+  compilacao: string;
+  porPartido: Record<string, ClassificacaoEspectro[]>;
 }
 
 export interface Noticia {

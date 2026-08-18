@@ -1,0 +1,722 @@
+{
+  "clariana-barao": [
+    {
+      "titulo": "Mulheres e crianças em primeiro lugar",
+      "resumo": "Propõe uma rede nacional de proteção à violência que integre saúde, assistência, segurança e justiça, com protocolos de risco e acompanhamento de reincidência. Trata a primeira infância como prioridade nacional — pré-natal, vacinação e creches — e prevê medidas de autonomia econômica das mulheres."
+    },
+    {
+      "titulo": "Economia — prosperidade que protege",
+      "resumo": "Propõe simplificação regulatória, digitalização da abertura de empresas e revisão do estoque de normas. Prevê crédito produtivo e compras públicas acessíveis a pequenos negócios, investimento em infraestrutura e logística, e responsabilidade fiscal medida por resultado."
+    },
+    {
+      "titulo": "Educação — preparar para o futuro",
+      "resumo": "Propõe alfabetização na idade adequada com avaliação frequente e intervenção pedagógica, recomposição de aprendizagem, valorização e apoio ao professor, e reorganização do ensino médio e técnico como transição para o trabalho."
+    },
+    {
+      "titulo": "Segurança — proteger a vida e garantir liberdade",
+      "resumo": "Propõe monitoramento de fronteiras por sensores, radares e drones dentro do marco legal, centros integrados de comando, combate ao narcotráfico e ao tráfico de armas, asfixia financeira das facções e políticas prisionais voltadas à redução da reincidência."
+    },
+    {
+      "titulo": "Saúde — cuidar antes da doença",
+      "resumo": "Propõe atenção primária resolutiva com equipes completas e prontuário interoperável, metas de acompanhamento de doenças crônicas, ampliação de vacinação e rastreamento, e incorporação de terapias mediante avaliação científica."
+    },
+    {
+      "titulo": "Estado que funciona",
+      "resumo": "Propõe governo digital com identidade integrada e o princípio de pedir dados uma única vez, mantendo atendimento presencial para quem está offline. Prevê metas anuais públicas, painéis de desempenho e reformulação de programas avaliados como ineficazes."
+    }
+  ],
+  "edmilson-costa": [
+    {
+      "titulo": "Na política",
+      "resumo": "Propõe convocar em dois anos uma Assembleia Constituinte com metade dos membros eleita por organizações populares, extinguir o Senado em favor de parlamento unicameral, instituir orçamento popular deliberativo e conselhos populares, e permitir revogação de mandatos por referendo."
+    },
+    {
+      "titulo": "Na economia",
+      "resumo": "Propõe nacionalizar e estatizar o sistema financeiro, criar o Banco dos Trabalhadores, auditar a origem da dívida pública com suspensão de juros durante a apuração, reestatizar empresas privatizadas e revogar o arcabouço fiscal, a Lei de Responsabilidade Fiscal e a autonomia do Banco Central."
+    },
+    {
+      "titulo": "Na área social e no mundo do trabalho",
+      "resumo": "Propõe revogar as reformas trabalhista e previdenciária, levar o salário mínimo ao piso calculado pelo Dieese em quatro anos, reduzir a jornada para 30 horas sem corte salarial, acabar com a escala 6x1 e garantir carteira assinada aos trabalhadores de aplicativos."
+    },
+    {
+      "titulo": "Nos serviços públicos e no meio ambiente",
+      "resumo": "Propõe tornar integralmente público o sistema de saúde, incluindo produção de medicamentos e equipamentos, fortalecer a atenção básica e o complexo industrial da saúde com financiamento do BNDES, e criar conselhos populares eleitos para controlar o sistema."
+    },
+    {
+      "titulo": "Nas relações internacionais",
+      "resumo": "Propõe fortalecer a integração regional por meio da ALBA e da Unasul, prestar solidariedade a Cuba, Palestina, Venezuela, Irã e Saara Ocidental, e firmar parcerias comerciais voltadas ao desenvolvimento industrial e tecnológico e à retenção de lucros no país."
+    }
+  ],
+  "augusto-cury": [
+    {
+      "titulo": "Responsabilidade fiscal e crescimento sustentável",
+      "resumo": "Propõe perseguir déficit público próximo de zero durante o mandato, com metas de eficiência por ministério, redução gradual da dívida, reforma administrativa, simplificação tributária e compromisso com carga tributária menor ao fim da transição."
+    },
+    {
+      "titulo": "Estado eficiente e digital",
+      "resumo": "Propõe governo totalmente digital, metas para todos os ministérios, avaliação permanente das políticas públicas e uso de inteligência artificial no rastreio de desperdícios e corrupção."
+    },
+    {
+      "titulo": "Brasil empreendedor",
+      "resumo": "Propõe criar 10 mil Escolas de Empreendedorismo e um Banco do Empreendedor, com a meta de 10 milhões de novos empreendedores, além de regularização fundiária e simplificação da abertura de empresas."
+    },
+    {
+      "titulo": "Nova revolução industrial",
+      "resumo": "Propõe um programa nacional para implantar 10 mil novas indústrias, com foco em robótica e Indústria 4.0, semicondutores, fármacos e biotecnologia, terras raras, cinco corredores estratégicos de exportação e zonas de processamento de exportação."
+    },
+    {
+      "titulo": "Educação para o Brasil do futuro",
+      "resumo": "Propõe prioridade absoluta à educação básica, expansão do ensino técnico e profissionalizante, universidades conectadas ao desenvolvimento nacional, valorização dos professores e ensino de gestão da emoção nas escolas."
+    },
+    {
+      "titulo": "Saúde integral",
+      "resumo": "Propõe fortalecer a atenção primária, modernizar o SUS, expandir a telemedicina e criar um Programa Nacional de Saúde Mental voltado à prevenção da ansiedade, da automutilação e do suicídio."
+    },
+    {
+      "titulo": "Segurança pública 4.0",
+      "resumo": "Propõe integrar as forças de segurança, combater facções com tecnologia e inteligência artificial, ampliar a cooperação internacional, valorizar as forças de segurança e reorganizar o sistema penitenciário com foco em ressocialização."
+    },
+    {
+      "titulo": "Agricultura 4.0",
+      "resumo": "Propõe dobrar a produção agropecuária, ampliar agricultura de precisão e cooperativismo, fortalecer o pequeno produtor, abrir mercados internacionais e estruturar gestão de risco e seguro rural."
+    },
+    {
+      "titulo": "Infraestrutura para o desenvolvimento",
+      "resumo": "Propõe ampliar concessões e parcerias público-privadas, modernizar a logística nacional, universalizar a infraestrutura digital e o saneamento básico, e construir infraestrutura resiliente a eventos climáticos."
+    },
+    {
+      "titulo": "Economia verde e transição energética",
+      "resumo": "Propõe posicionar o país como líder mundial em energia renovável, desenvolver hidrogênio verde e bioeconomia, e estruturar o mercado de carbono."
+    },
+    {
+      "titulo": "Combate à corrupção e transparência",
+      "resumo": "Propõe o programa SEO — Sociedade Está de Olho, uso de inteligência artificial no controle dos gastos públicos, fortalecimento dos órgãos de controle e transparência integral da administração."
+    },
+    {
+      "titulo": "Política pública de proteção às mulheres",
+      "resumo": "Propõe o programa Mulheres Vivas contra o feminicídio, resposta rápida a emergências por tecnologia, autonomia econômica e igualdade no acesso ao crédito, saúde integral da mulher e indicação de mulheres ao Supremo Tribunal Federal."
+    },
+    {
+      "titulo": "Juventude e futuro do trabalho",
+      "resumo": "Propõe educação conectada ao mercado, políticas de primeiro emprego e transição para o trabalho, estímulo ao empreendedorismo jovem e atenção à saúde mental da juventude."
+    },
+    {
+      "titulo": "Ciência, tecnologia e inteligência artificial",
+      "resumo": "Propõe uma estratégia nacional de inteligência artificial, universidades como centros de inovação, soberania digital com proteção de dados e programas de inclusão tecnológica."
+    },
+    {
+      "titulo": "Relações internacionais e diplomacia estratégica",
+      "resumo": "Propõe o programa Embaixada 4.0, com metas de resultado para a diplomacia, integração econômica e comercial, diplomacia climática e cooperação Sul-Sul."
+    },
+    {
+      "titulo": "Reforma política e institucional",
+      "resumo": "Propõe implantar o semipresidencialismo, reformar o sistema político e o Supremo Tribunal Federal, modernizar o Estado e ampliar a participação popular por meios digitais."
+    },
+    {
+      "titulo": "Desenvolvimento regional e redução das desigualdades",
+      "resumo": "Propõe polos regionais de desenvolvimento produtivo em substituição à guerra fiscal, o programa Semiárido Produtivo, interiorização do desenvolvimento no Nordeste e na Amazônia e cidades médias como polos de crescimento."
+    },
+    {
+      "titulo": "Cultura, identidade e coesão nacional",
+      "resumo": "Propõe valorizar a cultura brasileira e a economia criativa, preservar o patrimônio histórico e promover programas de cultura de paz e coesão social."
+    },
+    {
+      "titulo": "Visão de futuro e projeto de nação",
+      "resumo": "Fecha o plano com o objetivo de posicionar o Brasil como potência global no século XXI, combinando Estado eficiente, desenvolvimento com justiça social e soberania tecnológica."
+    }
+  ],
+  "flavio-bolsonaro": [
+    {
+      "titulo": "Brasil sem medo",
+      "resumo": "Propõe tratar facções como terroristas, reduzir a maioridade penal, criar tropa de elite nas fronteiras, ampliar presídios, endurecer a resposta ao feminicídio e atacar a produção de cocaína em território nacional."
+    },
+    {
+      "titulo": "Brasil por elas",
+      "resumo": "Propõe uma Central da Mulher com aplicativo e denúncia facilitada, bônus de internet, orientação financeira, o programa Casa Segura, creche garantida para toda criança e ações de saúde e trabalho voltadas a mulheres."
+    },
+    {
+      "titulo": "Brasil sem fila",
+      "resumo": "Propõe tratar a internet como infraestrutura, colocar todos os serviços públicos em aplicativo, usar inteligência artificial no atendimento ao cidadão, criar prontuário eletrônico único e zerar filas do INSS."
+    },
+    {
+      "titulo": "Brasil mais barato",
+      "resumo": "Propõe reduzir impostos sobre consumo, simplificar e baratear a conta de luz com regulação por menor preço e armazenamento em baterias, baratear alimentos e ampliar biocombustíveis, além de crédito com regras mais protetivas às famílias."
+    },
+    {
+      "titulo": "Brasil que prepara",
+      "resumo": "Propõe alfabetização na idade certa, formação voltada ao trabalho que existe, saúde preventiva, política de cuidado a idosos e dependentes, esporte formativo e valorização cultural das raízes brasileiras."
+    },
+    {
+      "titulo": "Brasil que prospera",
+      "resumo": "Propõe transição da proteção social para a autonomia, mudanças na relação entre trabalhador e sindicato, estímulo ao negócio próprio, uso da Caixa como banco de crédito popular e programas de casa própria."
+    },
+    {
+      "titulo": "Brasil que cresce",
+      "resumo": "Fixa meta de crescimento sustentado de 4% ao ano na próxima década, apoiada em segurança jurídica, logística e transporte, segurança hídrica, energia, agronegócio, minerais críticos, tecnologia e turismo."
+    },
+    {
+      "titulo": "Brasil que cumpre a Constituição",
+      "resumo": "Propõe reforma do Judiciário para restringir o Supremo Tribunal Federal ao papel de corte constitucional, reforma política e o que o plano chama de tesouraço na censura, com foco no equilíbrio entre os Poderes."
+    },
+    {
+      "titulo": "Brasil que não volta atrás",
+      "resumo": "Propõe descentralizar recursos e competências para estados e municípios, enxugar a máquina federal, profissionalizar a gestão pública, corrigir pontos da reforma tributária e combater fraudes contra aposentados."
+    }
+  ],
+  "hertz-dias": [
+    {
+      "titulo": "Trabalhadores de aplicativos e plataformas",
+      "resumo": "Propõe reconhecer o vínculo empregatício dos trabalhadores de aplicativos, dar transparência aos algoritmos e submeter as plataformas a controle público, com plataformas digitais públicas geridas pelos próprios trabalhadores."
+    },
+    {
+      "titulo": "Saúde",
+      "resumo": "Propõe um SUS 100% estatal, com fim da gestão privada por organizações sociais, fundações e parcerias público-privadas, proibição de transferir leitos públicos a planos privados e ampliação do investimento na atenção básica."
+    },
+    {
+      "titulo": "Educação",
+      "resumo": "Propõe romper com a influência de grupos empresariais e institutos privados na definição das políticas educacionais e ampliar o financiamento público da educação básica e superior."
+    },
+    {
+      "titulo": "Moradia",
+      "resumo": "Propõe tratar o território como direito e não como mercadoria, com política de moradia voltada a quem precisa morar em vez de ao mercado imobiliário."
+    },
+    {
+      "titulo": "Transporte público",
+      "resumo": "Propõe reverter privatizações e concessões de metrôs, estradas e ferrovias e organizar a mobilidade urbana em torno da necessidade da população em vez do lucro das operadoras."
+    },
+    {
+      "titulo": "Aposentadoria",
+      "resumo": "Propõe revogar a reforma da Previdência, reduzir a idade mínima de aposentadoria, garantir valorização real dos benefícios e incluir trabalhadores informais e precarizados na previdência pública."
+    },
+    {
+      "titulo": "Meio ambiente",
+      "resumo": "Trata a crise climática como esgotamento do modelo de produção e propõe enfrentar os interesses econômicos que sustentam a destruição ambiental, com controle público sobre os setores responsáveis."
+    },
+    {
+      "titulo": "Reforma agrária e trabalhadores do campo",
+      "resumo": "Propõe transferir o controle da terra aos trabalhadores rurais, demarcar terras indígenas e quilombolas e desapropriar latifúndios improdutivos, terras griladas e áreas de monocultura voltadas à exportação."
+    },
+    {
+      "titulo": "Negras e negros",
+      "resumo": "Parte do diagnóstico de que a população negra é maioria do proletariado brasileiro e a mais atingida pela reestruturação do trabalho, e propõe um programa de reparação ligado à luta da classe trabalhadora."
+    },
+    {
+      "titulo": "Mulheres",
+      "resumo": "Propõe delegacias especializadas abertas 24 horas, casas-abrigo e rede de atendimento com recursos garantidos e controle das trabalhadoras, punição efetiva aos agressores e comissões de mulheres nos locais de trabalho e estudo."
+    },
+    {
+      "titulo": "LGBTQIAPN+",
+      "resumo": "Aponta a negação de direitos básicos e a violência cotidiana contra a população LGBTQIAPN+ e propõe enfrentar o modelo heteronormativo que trata pessoas trans e não binárias como cidadãs de segunda categoria."
+    },
+    {
+      "titulo": "Povos indígenas",
+      "resumo": "Propõe regulamentar o direito às terras indígenas inscrito na Constituição de 1988 e conter a ação de mineradoras, madeireiras, fazendeiros e do próprio Estado na expulsão de comunidades e na contaminação de rios e solos."
+    },
+    {
+      "titulo": "Imigrantes",
+      "resumo": "Propõe legalização imediata dos documentos de haitianos, bolivianos, venezuelanos, cubanos, angolanos e demais imigrantes africanos, com direitos civis, trabalhistas e sociais equiparados aos dos trabalhadores brasileiros."
+    },
+    {
+      "titulo": "Pessoas com deficiência",
+      "resumo": "Propõe ampliar cotas e oportunidades de emprego e estudo, garantir intérprete de Libras em universidades e meios de comunicação e assegurar acessibilidade física e sensorial em serviços públicos e privados."
+    },
+    {
+      "titulo": "Reestatização das empresas estratégicas",
+      "resumo": "Propõe expropriar as grandes empresas privadas de mineração, petróleo, energia, siderurgia e celulose e as centralizadoras do agronegócio, incorporando seus ativos ao patrimônio público e proibindo novas privatizações."
+    },
+    {
+      "titulo": "Soberania digital",
+      "resumo": "Trata o domínio tecnológico como base da dependência econômica contemporânea e propõe infraestrutura digital nacional sob controle dos trabalhadores."
+    }
+  ],
+  "lula": [
+    {
+      "titulo": "Fortalecer a democracia, a participação social e modernizar o Estado",
+      "resumo": "Coloca a reforma política e eleitoral como prioridade para reduzir a distância entre representação política e composição da sociedade, e propõe manter conselhos de políticas públicas e conferências nacionais como canais permanentes de participação."
+    },
+    {
+      "titulo": "Combater as desigualdades",
+      "resumo": "Propõe dar continuidade à valorização do salário mínimo, ao Bolsa Família e à redução da regressividade tributária iniciada com a reforma do consumo e a isenção do imposto de renda até R$ 5.000, com atenção a povos indígenas, quilombolas e ribeirinhos."
+    },
+    {
+      "titulo": "Proteger a vida com uma segurança pública mais eficiente e integrada",
+      "resumo": "Propõe tratar a segurança como prioridade nacional com coordenação federativa, integração de dados e inteligência, e enfrentar o crime organizado pela desarticulação de suas estruturas econômicas e financeiras dentro dos marcos constitucionais."
+    },
+    {
+      "titulo": "Garantir o direito à educação para transformar vidas e o país",
+      "resumo": "Mantém a educação básica como prioridade em regime de colaboração federativa e propõe continuar a expansão do ensino técnico e tecnológico e o fomento ao ensino superior, em especial à rede federal."
+    },
+    {
+      "titulo": "Fortalecer a saúde com equidade, inovação e soberania",
+      "resumo": "Propõe seguir ampliando a atenção básica com novas unidades pelo Novo PAC, reduzir o tempo de espera na atenção especializada, democratizar o acesso a medicamentos e recuperar coberturas vacinais."
+    },
+    {
+      "titulo": "Ampliar o acesso à cultura e ao esporte como vetores de transformação social",
+      "resumo": "Trata cultura e esporte como dimensões da identidade nacional e instrumentos de desenvolvimento humano, inclusão social e dinamização econômica, com políticas de fomento à diversidade cultural e à projeção internacional do país."
+    },
+    {
+      "titulo": "Fortalecer o direito à cidade",
+      "resumo": "Propõe uma reforma urbana que integre habitação, saneamento, mobilidade, uso do solo, gestão de riscos e adaptação climática, apoiada na carteira de R$ 118 bilhões do Novo PAC."
+    },
+    {
+      "titulo": "Promover uma economia mais sustentável, produtiva e digital, para todas e todos",
+      "resumo": "Organiza a política econômica em cinco pilares — crescimento e emprego, combate às desigualdades, inflação controlada com responsabilidade fiscal, neoindustrialização com transformação ecológica e reabertura do Brasil ao mundo."
+    },
+    {
+      "titulo": "Segurança alimentar e produção agrícola",
+      "resumo": "Propõe manter o país fora do Mapa da Fome combinando garantia de renda, alimentação escolar, o Programa de Aquisição de Alimentos da agricultura familiar e estoques reguladores para conter a inflação de alimentos."
+    },
+    {
+      "titulo": "Ampliar a segurança energética e liderar a transição para uma economia de baixo carbono",
+      "resumo": "Propõe consolidar a Política Nacional de Transição Energética, expandir solar e eólica, manter investimentos em petróleo e gás e fortalecer gás natural, biometano e hidrogênio verde numa transição descrita como justa."
+    },
+    {
+      "titulo": "Promover a sustentabilidade ambiental e climática",
+      "resumo": "Propõe seguir com o Programa União com Municípios contra o desmatamento, a Política Nacional de Manejo Integrado do Fogo, a ampliação de unidades de conservação e a restauração florestal, além da política de proteção animal."
+    },
+    {
+      "titulo": "Valorizar o trabalho em suas múltiplas formas",
+      "resumo": "Propõe assegurar direitos trabalhistas, preparar trabalhadores para transformações tecnológicas e fortalecer empreendedorismo, cooperativismo e economia solidária, mantendo a política de valorização do salário mínimo."
+    },
+    {
+      "titulo": "Defender a soberania nacional e o protagonismo internacional do Brasil",
+      "resumo": "Propõe uma política externa sem subordinação estratégica, tratando defesa e diplomacia como partes da mesma estratégia, com autonomia estratégica e integração entre defesa e desenvolvimento tecnológico."
+    }
+  ],
+  "renan-santos": [
+    {
+      "titulo": "Ajuste fiscal",
+      "resumo": "Propõe aprovar uma PEC de Transição antes da posse e realizar um ajuste da ordem de R$ 250 bilhões anuais, com desindexação e desvinculação de despesas obrigatórias e nova reforma da Previdência."
+    },
+    {
+      "titulo": "Segurança pública",
+      "resumo": "Propõe uma Guerra ao Crime com adoção do Direito Penal do Inimigo como marco jurídico, aplicado por decretos sucessivos de Estado de Defesa em áreas sob comando de facções para operações de retomada territorial."
+    },
+    {
+      "titulo": "Pacto federativo",
+      "resumo": "Propõe reduzir em até 70% o número de municípios, de 5.570 para cerca de 1.656, fundindo os fiscalmente inviáveis segundo critérios de contiguidade geográfica, complementaridade econômica e capacidade de arrecadação própria."
+    },
+    {
+      "titulo": "Lei de Responsabilidade Gerencial",
+      "resumo": "Propõe criar o Comissariado Federal de Gestão Pública, autarquia com autonomia técnica e mandatos fixos vinculada à Fazenda, para alinhar incentivos da máquina pública e limitar o poder de prefeitos sobre orçamentos locais."
+    },
+    {
+      "titulo": "Economia e assistencialismo",
+      "resumo": "Propõe uma agenda de produtividade que realinhe incentivos econômicos e reforme o modelo de subsídios, apontando que o Estado transferiu cerca de R$ 4 trilhões em subsídios a setores privilegiados em 15 anos."
+    },
+    {
+      "titulo": "Infraestrutura",
+      "resumo": "Propõe o programa Missão Rondon para recuperar e modernizar a infraestrutura, retomando o patamar histórico de investimento — que caiu de cerca de 4% do PIB nos anos 1980 para cerca de 2% — com disciplina técnica e fiscal."
+    },
+    {
+      "titulo": "Saúde",
+      "resumo": "Propõe substituir a fila cronológica do SUS por regulação segundo grau de risco — gravidade clínica, risco de progressão, impacto funcional, vulnerabilidade social e tempo de espera — e integrar laboratórios, farmácias e centros de imagem em plataforma digital."
+    },
+    {
+      "titulo": "Cultura",
+      "resumo": "Propõe fundir os Ministérios da Cultura e da Educação e criar um código de imprensa, argumentando que a ausência de lei específica transferiu a regulação do setor a decisões judiciais."
+    },
+    {
+      "titulo": "Educação",
+      "resumo": "Propõe adotar nacionalmente o modelo educacional do Ceará, universalizar o método fônico de alfabetização e criar um ranqueamento das escolas mais violentas com código de conduta disciplinar."
+    },
+    {
+      "titulo": "Zonas econômicas especiais",
+      "resumo": "Propõe criar Zonas Econômicas Especiais no Nordeste, com suspensão de direitos aduaneiros e regime específico de IBS/CBS, aproveitando energia renovável abundante, portos atlânticos e mão de obra jovem."
+    },
+    {
+      "titulo": "Terras raras e indústria",
+      "resumo": "Propõe um modelo de parcerias estratégicas em três níveis de cooperação internacional, com marco legal de longo prazo — emenda constitucional ou lei de segurança nacional — que blinde o setor de oscilações eleitorais."
+    },
+    {
+      "titulo": "Agricultura e tecnologia",
+      "resumo": "Propõe o plano AgroBrasil 2030, iniciado pelo fim das invasões de terra, e o Marco Brasileiro da Inteligência Artificial, com o objetivo declarado de tornar o país fornecedor global de alimento e de capacidade computacional."
+    },
+    {
+      "titulo": "Política externa",
+      "resumo": "Propõe posicionar o Brasil como árbitro do Sul Global, com atuação na África, na Ásia — usando Timor-Leste como porta de entrada para a ASEAN — e na América Latina, em uma doutrina de política externa de Estado."
+    },
+    {
+      "titulo": "Desfavelização",
+      "resumo": "Propõe um programa de desfavelização estimado em R$ 1,2 a R$ 1,5 trilhão em dez anos, com título de propriedade individual, código de postura urbana, venda de parte das unidades a preço de mercado e instalação obrigatória de serviços públicos."
+    }
+  ],
+  "ronaldo-caiado": [
+    {
+      "titulo": "Introdução",
+      "resumo": "Apresenta o método de governo proposto: governar por prioridades nacionais, formar maioria de programa em vez de maioria de ocasião, escolher por competência, planejar antes de anunciar, avaliar políticas e realocar recursos."
+    },
+    {
+      "titulo": "Governar um país dividido",
+      "resumo": "Propõe o fim da reeleição no Poder Executivo, um Pacto Nacional de Governabilidade e Resultados, profissionalização da alta administração e reorganização da relação orçamentária com o Congresso."
+    },
+    {
+      "titulo": "Reformar o sistema político",
+      "resumo": "Propõe adotar o sistema distrital misto com transição negociada, fortalecer a democracia interna dos partidos, tornar o financiamento político integralmente rastreável e dar transparência às emendas parlamentares."
+    },
+    {
+      "titulo": "Estabilização fiscal",
+      "resumo": "Propõe publicar o Orçamento da Verdade, adotar estratégia fiscal plurianual, fazer despesas obrigatórias crescerem abaixo do PIB nominal, rever subsídios e benefícios tributários e combater supersalários e exceções ao teto."
+    },
+    {
+      "titulo": "Uma agenda para o crescimento",
+      "resumo": "Propõe a Estratégia Brasil 2040, com redução do custo do capital produtivo, agenda nacional de produtividade, reindustrialização a partir de vantagens brasileiras, abertura de mercados e modernização do mercado de trabalho."
+    },
+    {
+      "titulo": "Segurança pública e combate à corrupção",
+      "resumo": "Propõe criar o Ministério da Segurança Pública e o Sistema Nacional de Inteligência Criminal, asfixiar financeiramente o crime organizado, retomar o controle do sistema penitenciário e reduzir a maioridade penal."
+    },
+    {
+      "titulo": "Agronegócio",
+      "resumo": "Propõe adotar a biocompetitividade como estratégia nacional, produzir mais nas áreas já abertas, criar nova arquitetura de financiamento, tornar o seguro rural política permanente e reduzir a dependência externa de fertilizantes."
+    },
+    {
+      "titulo": "Ciência, tecnologia e inovação",
+      "resumo": "Propõe execução plurianual do FNDCT, modernização da Lei do Bem, marco legal de inteligência artificial centrado no uso, autoridade nacional de cibersegurança e capacidade nacional em semicondutores e computação quântica."
+    },
+    {
+      "titulo": "Cultura",
+      "resumo": "Propõe um Plano Nacional de Cultura 2027–2030 com metas, financiamento estável pelo Sistema Nacional de Cultura, política industrial para audiovisual e jogos, e revisão de direitos autorais frente às plataformas digitais."
+    },
+    {
+      "titulo": "Defesa nacional e soberania",
+      "resumo": "Propõe atualizar a Estratégia Nacional de Defesa, reforçar a presença na Amazônia e nas fronteiras, consolidar a Amazônia Azul, fortalecer a defesa cibernética e integrar defesa, ciência e indústria."
+    },
+    {
+      "titulo": "Educação",
+      "resumo": "Propõe um Pacto Nacional pela Alfabetização e Matemática na Idade Certa, recomposição nacional das aprendizagens, educação profissional em escala, escola em tempo integral e avaliação que gere ação pedagógica."
+    },
+    {
+      "titulo": "Energia",
+      "resumo": "Propõe conta de luz mais barata e transparente, abertura do mercado com proteção ao consumidor, armazenamento e hidrelétricas como bateria do sistema, gás natural como motor da indústria e liderança em combustíveis de baixo carbono."
+    },
+    {
+      "titulo": "Esporte: saúde, educação, inclusão e alto rendimento",
+      "resumo": "Propõe um Plano Nacional do Esporte 2035, rede de esporte comunitário, o programa Brasil Ativo de prevenção em saúde, paradesporto e acessibilidade, trajetória nacional de talentos e integridade antidopagem."
+    },
+    {
+      "titulo": "Indústria: o Brasil que produz, inova e gera empregos",
+      "resumo": "Propõe tratar a política industrial como política de Estado, com foco em investimento produtivo, inovação, transição energética e indústria verde, digitalização, defesa comercial modernizada e formação de trabalhadores."
+    },
+    {
+      "titulo": "Infraestrutura",
+      "resumo": "Propõe um Plano Nacional de Infraestrutura como política de Estado, com manutenção prioritária, conclusão de obras iniciadas, licenciamento ambiental com prazo, ampliação de concessões e universalização do saneamento."
+    },
+    {
+      "titulo": "Meio ambiente",
+      "resumo": "Propõe um Pacto Nacional pelo Desenvolvimento Sustentável, licenciamento por risco e prazo, implementação integral do Código Florestal, mercado de carbono de alta integridade, pagamento por serviços ambientais e bioeconomia."
+    },
+    {
+      "titulo": "Mineração estratégica",
+      "resumo": "Propõe uma Estratégia Nacional de Minerais Críticos, mapeamento geológico com dados abertos, verticalização com conteúdo tecnológico, segurança de barragens, combate ao garimpo ilegal e rastreabilidade mineral."
+    },
+    {
+      "titulo": "Mobilidade urbana",
+      "resumo": "Propõe tratar o transporte coletivo como política de Estado, com política nacional de financiamento no primeiro ano, tarifa justa, redes metropolitanas integradas, renovação de frotas de baixa emissão e segurança viária."
+    },
+    {
+      "titulo": "Mulheres",
+      "resumo": "Propõe um Pacto Nacional pelo Fim do Feminicídio, com medida protetiva monitorada, julgamento prioritário, reparação patrimonial, casas de acolhimento, creches, transparência salarial e crédito para empreendedoras."
+    },
+    {
+      "titulo": "Política e proteção social",
+      "resumo": "Propõe um Sistema Nacional de Gestão Social Integrada, transferência de renda com porta de saída, prioridade à primeira infância, política para população em situação de rua e fortalecimento do SUAS."
+    },
+    {
+      "titulo": "Política para o Nordeste: desenvolvimento, água e oportunidades",
+      "resumo": "Propõe o Pacto Nordeste 2030, com fortalecimento do BNB, do FNE e da Sudene, segurança hídrica do litoral ao semiárido, energia renovável com indústria local e corredores logísticos de integração atlântica."
+    },
+    {
+      "titulo": "Racismo",
+      "resumo": "Propõe metas de equidade em todas as políticas, proteção da juventude negra contra a violência, segurança pública sem discriminação, políticas para comunidades quilombolas e povos indígenas e combate à intolerância religiosa."
+    },
+    {
+      "titulo": "Região amazônica",
+      "resumo": "Propõe organizar a governança fundiária, desarticular redes criminosas nas fronteiras, combater a madeira ilegal, gerar renda para quem conserva a floresta e criar uma Estratégia de Saúde Amazônica no SUS."
+    },
+    {
+      "titulo": "Relações exteriores e a inserção do Brasil no mundo",
+      "resumo": "Propõe política externa como política de Estado, com relações simultâneas com todos os polos sem alinhamento automático, conclusão do acordo Mercosul–União Europeia, integração sul-americana e aproximação com a OCDE."
+    },
+    {
+      "titulo": "Saúde",
+      "resumo": "Propõe um Programa Nacional de Saúde 2027–2030 que preserve o SUS como sistema universal e o organize por regiões, com acesso regulado por risco clínico, redes para infarto, AVC e câncer, recuperação da vacinação e produção nacional de medicamentos."
+    },
+    {
+      "titulo": "Turismo: desenvolvimento regional, emprego e imagem do Brasil",
+      "resumo": "Propõe uma Estratégia Nacional de Turismo 2035, com gestão profissional de destinos, conectividade aérea, promoção internacional orientada por dados, crédito e qualificação profissional do setor."
+    }
+  ],
+  "rui-costa-pimenta": [
+    {
+      "titulo": "Parar o roubo dos salários",
+      "resumo": "Propõe reposição integral das perdas salariais, aumento emergencial de 50% em todos os salários e escala móvel de reajuste automático diante da inflação."
+    },
+    {
+      "titulo": "Reduzir a jornada e acabar com o desemprego",
+      "resumo": "Propõe reduzir a jornada para 7 horas diárias em 5 dias, totalizando 35 horas semanais, sem redução de salário, como forma de gerar novos postos de trabalho."
+    },
+    {
+      "titulo": "Revogar todas as \"reformas\" do golpe de 2016",
+      "resumo": "Propõe cancelar a reforma trabalhista, restabelecer integralmente a CLT, acabar com a terceirização e reverter a reforma da Previdência."
+    },
+    {
+      "titulo": "Cancelar as privatizações e a destruição da economia nacional",
+      "resumo": "Propõe cancelar a venda de estatais e reestatizar as empresas transferidas ao capital estrangeiro, colocando as riquezas naturais sob controle público."
+    },
+    {
+      "titulo": "Fim da destruição dos serviços públicos e dos ataques ao funcionalismo",
+      "resumo": "Propõe manter a estabilidade dos servidores, ampliar verbas para saúde e educação e acabar com o teto de gastos e a Lei de Responsabilidade Fiscal."
+    },
+    {
+      "titulo": "Reforma agrária com expropriação do latifúndio e demarcação das terras dos índios",
+      "resumo": "Propõe assentamento imediato dos sem-terra acampados, demarcação e posse das terras indígenas em retomada e expulsão de latifundiários que ocuparam essas áreas."
+    },
+    {
+      "titulo": "Fim da especulação, moradia para todos",
+      "resumo": "Propõe expropriar imóveis vagos de especuladores, proibir despejos e desocupações e executar um plano nacional de construção de milhões de moradias populares."
+    },
+    {
+      "titulo": "Barrar a destruição da educação e conquistar ensino público, gratuito e de qualidade",
+      "resumo": "Propõe eleição direta para todos os postos de gestão escolar, destinação de verba pública exclusivamente ao ensino público e fim da perseguição a professores e estudantes."
+    },
+    {
+      "titulo": "Fim do lucro com a doença: saúde pública e gratuita, sob o controle dos trabalhadores",
+      "resumo": "Propõe ampliar sem limite as verbas da saúde pública, um plano de emergência para o SUS e o fim da privatização do setor."
+    },
+    {
+      "titulo": "Abaixo a repressão. Liberdade de expressão e direito de autodefesa",
+      "resumo": "Propõe dissolver a polícia militar e o aparato repressivo, apontando as mais de seis mil mortes anuais causadas por policiais, e garantir o direito de autodefesa da população."
+    },
+    {
+      "titulo": "Fim da ditadura dos bancos e da expropriação do povo",
+      "resumo": "Propõe redução imediata dos juros, estatização do sistema financeiro em um banco estatal único sob controle dos trabalhadores e fim da independência do Banco Central."
+    },
+    {
+      "titulo": "Abaixo a ditadura do Judiciário e fim do regime antidemocrático",
+      "resumo": "Propõe direito irrestrito de greve sem intervenção do Estado nos sindicatos, liberdade total de organização partidária e cancelamento da Lei da Ficha Limpa e da cláusula de barreira."
+    },
+    {
+      "titulo": "Fora o imperialismo da Amazônia e da América Latina",
+      "resumo": "Propõe rejeitar a internacionalização da Amazônia e colocar as riquezas da região sob controle das organizações populares e dos povos indígenas."
+    },
+    {
+      "titulo": "Em defesa do futebol, do carnaval e de todas as manifestações da cultura popular",
+      "resumo": "Propõe garantir recursos públicos para acesso à cultura e ao esporte e acabar com os monopólios privados do setor."
+    },
+    {
+      "titulo": "Abaixo a política de conciliação. Por um governo dos trabalhadores",
+      "resumo": "Propõe romper alianças com partidos que o programa classifica como golpistas e neoliberais e organizar a mobilização popular em torno de um governo dos trabalhadores."
+    }
+  ],
+  "samara": [
+    {
+      "titulo": "Emprego e renda",
+      "resumo": "Propõe aumento de 10% no salário mínimo, fim da escala 6x1 e redução da jornada para 30 horas semanais sem redução salarial, com turnos de 6 horas ou escala 4x3 para multiplicar postos formais."
+    },
+    {
+      "titulo": "Dívida pública, sistema financeiro e tributação",
+      "resumo": "Propõe suspensão imediata do pagamento de juros e amortizações da dívida pública, seguida de auditoria pública, apontando a taxa básica de 14% ao ano como mecanismo de transferência de renda a bancos."
+    },
+    {
+      "titulo": "Saúde pública e valorização do SUS",
+      "resumo": "Propõe garantir saúde pública e gratuita para todos e acabar com a exploração pelos planos de saúde privados, expandindo o SUS como sistema universal."
+    },
+    {
+      "titulo": "Educação popular e científica",
+      "resumo": "Propõe educação pública e gratuita em todos os níveis, fim do lucro na educação — citando a atuação de grupos como a Cogna — e livre acesso à universidade."
+    },
+    {
+      "titulo": "Combate radical à corrupção",
+      "resumo": "Propõe julgamento, prisão e confisco dos bens de corruptos e corruptores, tratando a corrupção como resultado da estrutura econômica e não como desvio individual."
+    },
+    {
+      "titulo": "Emancipação das mulheres trabalhadoras",
+      "resumo": "Propõe igualdade e autonomia econômica para as mulheres e combate ao machismo e à violência de gênero, partindo do diagnóstico de menores salários, maior desemprego e maior precarização."
+    },
+    {
+      "titulo": "Juventude",
+      "resumo": "Propõe garantir emprego, educação, esporte e cultura para toda a juventude e combater a violência contra a juventude negra e periférica."
+    },
+    {
+      "titulo": "Combate às opressões e liberdade de expressão",
+      "resumo": "Propõe o combate ao racismo a partir dos dados de encarceramento e letalidade — 964.668 pessoas presas em 2025, crescimento de 314,5% desde 2000 — e a garantia da liberdade de expressão."
+    },
+    {
+      "titulo": "Cultura popular e soberania cultural",
+      "resumo": "Propõe nacionalizar as grandes gravadoras e produtoras cinematográficas, apontando que as leis de fomento existentes beneficiam principalmente grandes empresas privadas."
+    },
+    {
+      "titulo": "Reforma agrária popular e reforma urbana",
+      "resumo": "Propõe reforma agrária popular com nacionalização da terra e fim do monopólio privado da propriedade rural, retomando as desapropriações paralisadas."
+    },
+    {
+      "titulo": "Segurança pública, justiça e desmilitarização",
+      "resumo": "Propõe desmilitarizar as polícias, sustentando que décadas de aumento de investimento em policiamento ostensivo e operações não reduziram o crime organizado nem a violência."
+    },
+    {
+      "titulo": "Transporte público e mobilidade urbana",
+      "resumo": "Propõe estatizar os meios de transporte coletivo, apontando que quem ganha salário mínimo gasta em média 18% da renda com transporte e passa cerca de 2 horas por dia em deslocamento."
+    },
+    {
+      "titulo": "Memória, verdade, justiça e reparação",
+      "resumo": "Propõe revisar a Lei da Anistia e punir torturadores e assassinos da ditadura militar, citando os 434 mortos e desaparecidos reconhecidos pela Comissão Nacional da Verdade."
+    },
+    {
+      "titulo": "Soberania nacional e fim das privatizações",
+      "resumo": "Propõe controle social sobre monopólios, consórcios e setores estratégicos da economia, com os meios de produção sob propriedade pública."
+    },
+    {
+      "titulo": "Meio ambiente, transição ecológica e defesa da natureza",
+      "resumo": "Propõe demarcação imediata de terras indígenas e quilombolas, proibição da destruição de florestas, controle popular sobre a Amazônia e expulsão dos monopólios da região."
+    },
+    {
+      "titulo": "Solidariedade internacionalista",
+      "resumo": "Propõe apoio às lutas de povos e países contra a dominação capitalista e a espoliação imperialista, com defesa da soberania e da autodeterminação dos povos."
+    },
+    {
+      "titulo": "A luta pelo socialismo",
+      "resumo": "Fecha o programa apresentando as medidas anteriores como convergentes para a superação do capitalismo, por meio da organização e da mobilização direta da classe trabalhadora."
+    }
+  ],
+  "wilson-grassi": [
+    {
+      "titulo": "Reforma tributária: o Imposto Único Federal",
+      "resumo": "Propõe substituir os tributos federais por um Imposto Único Federal, com alíquota fixada por regra definida em lei, salvaguardas, período de transição e metas — o eixo mais extenso do plano, com estudo de impacto e respostas a objeções."
+    },
+    {
+      "titulo": "Trabalho, emprego e renda",
+      "resumo": "Propõe zerar o custo tributário de contratar, simplificar obrigações acessórias, criar condições específicas para microempreendedores e pequenos negócios e vincular a qualificação profissional a destinos concretos de emprego."
+    },
+    {
+      "titulo": "Segurança pública",
+      "resumo": "Trata a administração do crime organizado a partir de dentro do sistema prisional como uma das cinco travas do país e organiza a resposta em torno do que o plano chama de Método D35."
+    },
+    {
+      "titulo": "Saúde Única",
+      "resumo": "Propõe atacar as zoonoses na origem, inserir o médico-veterinário no serviço público de saúde, estruturar programas de castração e identificação animal e preparar o país para emergências sanitárias de origem animal."
+    },
+    {
+      "titulo": "Proteção e direitos animais",
+      "resumo": "Parte do diagnóstico de que a legislação de proteção animal já existe e o gargalo está na execução, e propõe cinco medidas para fazer valer o que a lei garante."
+    },
+    {
+      "titulo": "Agropecuária, sanidade e comércio exterior",
+      "resumo": "Propõe tratar a defesa sanitária como política de Estado, fechar o prazo do plano de rastreabilidade já existente, incorporar bem-estar animal à cadeia produtiva e apoiar o pequeno produtor."
+    },
+    {
+      "titulo": "Saúde: atenção primária e o fim da fila",
+      "resumo": "Propõe declarar a atenção primária como prioridade orçamentária explícita e atacar a fila cirúrgica e de diagnóstico, além do abastecimento de medicamentos e insumos."
+    },
+    {
+      "titulo": "Educação e formação",
+      "resumo": "Propõe alfabetização na idade certa, reorganização do ensino médio e da formação técnica, uma PEC da Pesquisa e mudanças no financiamento do ensino superior e da ciência."
+    },
+    {
+      "titulo": "Esporte: formar atleta, não só premiar medalha",
+      "resumo": "Propõe educação física efetiva na escola, bolsa vinculada ao atleta com contrato direto com a União, valor que cubra o custo real de competir e apoio à transição de carreira."
+    },
+    {
+      "titulo": "Habitação: casa própria onde a pessoa escolhe morar",
+      "resumo": "Propõe portabilidade do aluguel para financiamento, mecanismo declarado de juros baixos com fonte de recursos explicitada, regularização fundiária do que já está construído e meta pública de entrega."
+    },
+    {
+      "titulo": "Estado digital, desburocratização e transparência",
+      "resumo": "Propõe interoperabilidade obrigatória entre sistemas públicos, proteção de dados efetiva, redução de exigências ao cidadão e transparência ativa por padrão."
+    },
+    {
+      "titulo": "Infraestrutura, energia e meio ambiente",
+      "resumo": "Propõe priorizar a logística ferroviária, revisar a política energética e tratar meio ambiente e clima em conjunto com a infraestrutura."
+    },
+    {
+      "titulo": "Defesa nacional e guerra ao crime organizado",
+      "resumo": "Propõe piso constitucional de 2% do PIB para a Defesa, reajuste do soldo dos praças, presença permanente na fronteira e definição jurídica do que o plano chama de guerra ao tráfico."
+    },
+    {
+      "titulo": "Pacto institucional e superação da polarização",
+      "resumo": "Descreve o método de negociação pretendido, a relação com os demais Poderes e com a federação, e o tom de comunicação que o plano se compromete a adotar."
+    }
+  ],
+  "zema": [
+    {
+      "titulo": "Segurança pública",
+      "resumo": "Propõe recuperar territórios dominados pelo crime organizado, acabar com o que chama de prende e solta, reduzir a maioridade penal e endurecer a legislação, fortalecer a atuação dos estados e reduzir a subnotificação de violência contra a mulher."
+    },
+    {
+      "titulo": "Combate à corrupção e aos privilégios",
+      "resumo": "Propõe fazer a lei valer para todos, eliminar privilégios e mordomias da elite política e tornar a transparência a regra no governo."
+    },
+    {
+      "titulo": "Reforma do Judiciário e dos órgãos de controle",
+      "resumo": "Propõe limitar o poder do Supremo Tribunal Federal, moralizar o Judiciário e os órgãos de controle e dar ao Senado condições reais de fiscalizar o Supremo."
+    },
+    {
+      "titulo": "Finanças públicas",
+      "resumo": "Propõe um choque fiscal nos gastos do governo, retirar o Estado de áreas onde não é essencial e cortar impostos."
+    },
+    {
+      "titulo": "Desenvolvimento econômico",
+      "resumo": "Propõe derrubar os juros, ajudar famílias endividadas, simplificar o empreendedorismo, provocar um choque de investimentos privados em infraestrutura e dar previsibilidade a quem investe."
+    },
+    {
+      "titulo": "Trabalho e emprego",
+      "resumo": "Propõe criar uma alternativa flexível à CLT, remover obstáculos à geração de empregos formais, qualificar a mão de obra e ampliar a liberdade de trabalho."
+    },
+    {
+      "titulo": "Infraestrutura e saneamento",
+      "resumo": "Propõe destravar investimentos, garantir segurança jurídica a investidores e operadores e fortalecer a independência das agências reguladoras e a governança do setor."
+    },
+    {
+      "titulo": "Minas e energia",
+      "resumo": "Propõe baixar a conta de luz, destravar investimentos em petróleo e gás, converter energia limpa e barata em riqueza e aproveitar o potencial do subsolo."
+    },
+    {
+      "titulo": "Política externa",
+      "resumo": "Propõe recuperar a credibilidade e a influência do Brasil, alinhar o país às democracias e aos mercados globais e combater ameaças transfronteiriças."
+    },
+    {
+      "titulo": "Gestão pública e eficiência no governo",
+      "resumo": "Propõe gestão por resultados focada no cidadão, transformação da forma de trabalhar no setor público e um Estado digital e transparente."
+    },
+    {
+      "titulo": "Agronegócio",
+      "resumo": "Propõe impulsionar a produtividade da agroindústria, proteger a renda do produtor, aproximar agronegócio e meio ambiente e defender a propriedade rural."
+    },
+    {
+      "titulo": "Meio ambiente",
+      "resumo": "Propõe conservar a natureza sem travar o desenvolvimento, transformar o potencial ambiental em riqueza, proteger a população de tragédias ambientais e promover o que chama de educação ambiental sem radicalismo."
+    },
+    {
+      "titulo": "Educação básica",
+      "resumo": "Propõe priorizar a primeira infância e a aprendizagem dos estudantes, formar e valorizar professores e diretores, transformar o ensino médio em porta de entrada para o trabalho e ampliar a liberdade de escolha das famílias entre modelos educacionais."
+    },
+    {
+      "titulo": "Educação superior, ciência e tecnologia",
+      "resumo": "Propõe um choque de gestão nas universidades e institutos federais, impulsionar a ciência e tecnologia brasileira, conectar as universidades às demandas do mercado e atrair talentos."
+    },
+    {
+      "titulo": "Saúde",
+      "resumo": "Propõe transformar a saúde brasileira em saúde digital, cuidar antes de a doença chegar, garantir atendimento rápido em clínicas e hospitais públicos e usar o setor privado para ampliar o atendimento e a qualidade da saúde pública."
+    },
+    {
+      "titulo": "Desenvolvimento social",
+      "resumo": "Propõe oferecer porta de saída dos programas sociais pelo trabalho, combater fraudes, reduzir a população em situação de rua, garantir moradia digna e proteger pessoas em situação de vulnerabilidade."
+    },
+    {
+      "titulo": "Esporte",
+      "resumo": "Propõe usar o esporte como motor de desenvolvimento e como instrumento de cuidado com a saúde da população."
+    },
+    {
+      "titulo": "Cultura e turismo",
+      "resumo": "Propõe proteger o patrimônio histórico e cultural, gerar emprego e renda pela cultura, destravar o investimento privado em turismo, qualificar destinos e profissionalizar a governança do setor."
+    },
+    {
+      "titulo": "Reforma institucional",
+      "resumo": "Propõe garantir proteção efetiva à liberdade de expressão, rever o pacto federativo aproximando poder e recursos do cidadão, devolver a política ao eleitor e ampliar a eficiência e a transparência do Congresso."
+    },
+    {
+      "titulo": "Defesa e segurança nacional",
+      "resumo": "Propõe robustecer os sistemas de defesa nacional e as Forças Armadas e ampliar as capacidades do governo em ações de inteligência."
+    }
+  ]
+}

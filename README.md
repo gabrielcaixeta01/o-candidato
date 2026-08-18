@@ -15,8 +15,9 @@ sem cor partidária e sem linguagem de opinião.
 | `/` | Hero, calendário eleitoral, busca e galeria das 13 candidaturas |
 | `/candidato/[slug]` | Ficha completa, uma por candidatura, pré-renderizada no build |
 
-A ficha traz: retrato creditado, resumo em parágrafos, capítulos do plano de
-governo com link para o PDF registrado, manchetes recentes e uma tabela com o
+A ficha traz: retrato creditado, resumo de trajetória, posicionamento do
+partido segundo levantamentos externos, capítulos do plano de governo com
+resumo e link para o PDF registrado, manchetes recentes e uma tabela com o
 registro no TSE (nascimento, naturalidade, escolaridade, ocupação declarada e
 situação do pedido de registro).
 
@@ -37,6 +38,8 @@ Tudo vive em JSON versionado. A página é estática e só muda quando o JSON mu
 | Arquivo | Origem | Editado por |
 | --- | --- | --- |
 | `src/data/candidatos.json` | Registros do TSE | à mão |
+| `src/data/propostas.json` | Planos de governo registrados no TSE | à mão |
+| `src/data/espectro.json` | Levantamentos de terceiros sobre os partidos | à mão |
 | `src/data/calendario.json` | Calendário eleitoral do TSE | à mão |
 | `src/data/noticias.json` | RSS / News API | `scripts/fetch-noticias.mjs` |
 
@@ -86,18 +89,57 @@ https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo
 Ficam versionados porque o TSE publica os planos **só em .zip por unidade
 eleitoral** — não existe URL por candidato para linkar. São ~15 MB no total.
 
-`temas` guarda os **títulos dos capítulos transcritos do sumário de cada PDF**.
-Não há resumo do conteúdo, e isso é uma decisão, não uma pendência: sintetizar
-propostas obriga a escolher o que é relevante, e essa escolha é exatamente o que
-o projeto não pode fazer. A única edição sobre o texto original é de
-capitalização — sumários em caixa alta viram caixa normal, sem mudar palavra.
+`src/data/propostas.json` mapeia `slug → [{ titulo, resumo }]`, 174 capítulos ao
+todo:
 
-Quem quiser o teor lê o documento: cada ficha linka o PDF e a ficha completa no
+- **`titulo`** é transcrito do sumário do PDF. A única edição é de capitalização
+  — sumários em caixa alta viram caixa normal, sem trocar palavra.
+- **`resumo`** é redação nossa a partir do texto do capítulo. Três regras
+  fecham a porta para o viés: descrever o que o plano **propõe** e nunca se é
+  bom, viável ou caro; usar verbo de atribuição (*propõe*, *prevê*) para deixar
+  claro de quem é a afirmação; manter extensão semelhante em todas as fichas
+  (hoje entre 18 e 44 palavras), porque dar mais espaço a uma candidatura já é
+  uma forma de destaque.
+
+O teor exato está no PDF, linkado na mesma seção junto com a ficha no
 DivulgaCandContas.
 
 > Das 13 candidaturas, 12 têm plano. O pacote do TSE não inclui plano da
 > candidatura de Pablo Marçal; a ficha diz isso explicitamente em vez de deixar
 > a seção vazia.
+
+### Posicionamento político
+
+`src/data/espectro.json` classifica o **partido**, nunca a pessoa candidata.
+
+Não existe classificação oficial — o TSE não registra posicionamento
+ideológico. Por isso o site nunca afirma onde uma candidatura está: mostra o que
+levantamentos identificados publicaram sobre o partido, com nome, ano e link de
+cada um, no rótulo original.
+
+As fontes discordam com frequência, e as divergências ficam à vista de
+propósito. O PSD aparece como *centro-direita* (Cláudio Couto, 2018), *direita*
+(Congresso em Foco, 2019) e *centro* (Valor Econômico, 2025) — mostrar os três
+informa mais do que escolher um, e escolher seria emitir opinião.
+
+> Missão e Democrata não aparecem em nenhum levantamento: foram registrados em
+> 2025, depois de todos eles. A ficha diz isso em vez de arriscar um palpite.
+
+### Por que não há seção de polêmicas
+
+Foi avaliada e recusada, por duas razões.
+
+A forma pedida — "existem rumores de que…" — é o mecanismo clássico de
+difamação por insinuação: dá alcance a uma acusação sem assumi-la, e num site
+que existe para publicar só o verificável, seria a única seção sem fonte.
+
+E a versão factual da mesma ideia não sobrevive ao teste de paridade. O pacote
+de certidões criminais do TSE traz 87 documentos de Lula, 12 de Zema, 5 de Renan
+Santos e nenhum para 8 das 13 candidaturas. Certidão é emitida **por foro**, não
+por processo: quem morou e trabalhou em mais jurisdições junta mais papel, quase
+todo ele "nada consta". Publicar isso lado a lado mediria número de comarcas
+consultadas e seria lido como número de problemas. O arquivo `motivo_cassacao`
+de 2026 está vazio para as 13.
 
 ### Dados do registro
 
@@ -164,6 +206,10 @@ de implementação e não devem ser "otimizadas" sem intenção:
   chega na ponta vê só um lado, em vez de um ciclo que sugeriria sequência.
 - Tema claro único, sem variante escura: uma segunda diagramação seria mais um
   lugar onde a paridade entre candidatos poderia quebrar.
+- Rótulo ideológico é sempre do partido, sempre atribuído a uma fonte com ano e
+  link, e nunca dito na voz do site. Fontes que divergem aparecem todas.
+- Resumo de proposta descreve, não avalia, e tem extensão semelhante em todas as
+  fichas.
 - Campos sem fonte confirmada mostram travessão em vez de estimativa.
 - `observacao` descreve andamento processual objetivo (ex.: registro em análise),
   nunca o mérito da candidatura.

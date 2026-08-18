@@ -23,14 +23,6 @@
       "Preside o diretório estadual do Democracia Cristã em Mato Grosso, partido pelo qual concorre.",
       "É a primeira vez que disputa um cargo eletivo. Concorre com Fabiana Torquato, também advogada, como candidata a vice-presidente."
     ],
-    "temas": [
-      "Mulheres e crianças em primeiro lugar",
-      "Economia — prosperidade que protege",
-      "Educação — preparar para o futuro",
-      "Segurança — proteger a vida e garantir liberdade",
-      "Saúde — cuidar antes da doença",
-      "Estado que funciona"
-    ],
     "planoGoverno": {
       "arquivo": "/planos/clariana-barao.pdf",
       "titulo": "Proteger Hoje, Transformar o Amanhã",
@@ -61,13 +53,6 @@
       "Economista, nasceu em Pedreiras, no Maranhão, em 1950. É doutor em Economia pela Unicamp e autor de livros sobre economia política e capitalismo contemporâneo. No registro declarou ao TSE a ocupação de aposentado.",
       "Milita no Partido Comunista Brasileiro desde os anos 1970 e integra a direção nacional da legenda.",
       "Foi candidato a vice-presidente da República em 2010. Em 2026 encabeça a chapa do PCB, tendo Cleusa Santos como candidata a vice."
-    ],
-    "temas": [
-      "Na política",
-      "Na economia",
-      "Na área social e no mundo do trabalho",
-      "Nos serviços públicos e no meio ambiente",
-      "Nas relações internacionais"
     ],
     "planoGoverno": {
       "arquivo": "/planos/edmilson-costa.pdf",
@@ -100,27 +85,6 @@
       "Atua também como empresário no setor editorial e de treinamento. Nunca exerceu cargo público eletivo ou de nomeação.",
       "2026 é sua estreia em disputas eleitorais. Concorre pelo Avante, com o ex-deputado federal Júlio Delgado como candidato a vice-presidente."
     ],
-    "temas": [
-      "Responsabilidade fiscal e crescimento sustentável",
-      "Estado eficiente e digital",
-      "Brasil empreendedor",
-      "Nova revolução industrial",
-      "Educação para o Brasil do futuro",
-      "Saúde integral",
-      "Segurança pública 4.0",
-      "Agricultura 4.0",
-      "Infraestrutura para o desenvolvimento",
-      "Economia verde e transição energética",
-      "Combate à corrupção e transparência",
-      "Política pública de proteção às mulheres",
-      "Juventude e futuro do trabalho",
-      "Ciência, tecnologia e inteligência artificial",
-      "Relações internacionais e diplomacia estratégica",
-      "Reforma política e institucional",
-      "Desenvolvimento regional e redução das desigualdades",
-      "Cultura, identidade e coesão nacional",
-      "Visão de futuro e projeto de nação"
-    ],
     "planoGoverno": {
       "arquivo": "/planos/augusto-cury.pdf",
       "titulo": null,
@@ -151,17 +115,6 @@
       "Advogado, nasceu em Resende, no Rio de Janeiro, em 1981. No registro declarou ao TSE ensino superior completo e a ocupação de senador.",
       "Foi deputado estadual no Rio de Janeiro por quatro mandatos consecutivos, de 2003 a 2018. Em 2018 elegeu-se senador pelo estado, mandato que exerce desde 2019.",
       "Disputa a Presidência pela primeira vez em 2026, pelo PL, com o senador Alfredo Gaspar como candidato a vice-presidente."
-    ],
-    "temas": [
-      "Brasil sem medo",
-      "Brasil por elas",
-      "Brasil sem fila",
-      "Brasil mais barato",
-      "Brasil que prepara",
-      "Brasil que prospera",
-      "Brasil que cresce",
-      "Brasil que cumpre a Constituição",
-      "Brasil que não volta atrás"
     ],
     "planoGoverno": {
       "arquivo": "/planos/flavio-bolsonaro.pdf",
@@ -194,24 +147,6 @@
       "Milita no movimento negro e no PSTU, partido pelo qual concorre.",
       "Foi candidato a vice-presidente da República em 2018, à Prefeitura de São Luís em 2020 e ao governo do Maranhão em 2022. Em 2026 encabeça a chapa do PSTU, com Vanessa Portugal como candidata a vice."
     ],
-    "temas": [
-      "Trabalhadores de aplicativos e plataformas",
-      "Saúde",
-      "Educação",
-      "Moradia",
-      "Transporte público",
-      "Aposentadoria",
-      "Meio ambiente",
-      "Reforma agrária e trabalhadores do campo",
-      "Negras e negros",
-      "Mulheres",
-      "LGBTQIAPN+",
-      "Povos indígenas",
-      "Imigrantes",
-      "Pessoas com deficiência",
-      "Reestatização das empresas estratégicas",
-      "Soberania digital"
-    ],
     "planoGoverno": {
       "arquivo": "/planos/hertz-dias.pdf",
       "titulo": "Com os trabalhadores contra o sistema — por um Brasil soberano e socialista",
@@ -242,21 +177,6 @@
       "Nasceu em Garanhuns, Pernambuco, em 1945, e migrou para São Paulo na infância. Trabalhou como torneiro mecânico na indústria metalúrgica do ABC paulista — ocupação que voltou a declarar ao TSE no registro de 2026.",
       "Presidiu o Sindicato dos Metalúrgicos de São Bernardo do Campo e Diadema e participou da fundação do Partido dos Trabalhadores, em 1980. Foi deputado federal por São Paulo entre 1987 e 1991.",
       "Disputou a Presidência da República em 1989, 1994, 1998, 2002, 2006 e 2022. Governou o país de 2003 a 2010 e voltou ao cargo em 2023. Concorre à reeleição em 2026 pelo PT, com o vice-presidente Geraldo Alckmin (PSB) novamente na chapa."
-    ],
-    "temas": [
-      "Fortalecer a democracia, a participação social e modernizar o Estado",
-      "Combater as desigualdades",
-      "Proteger a vida com uma segurança pública mais eficiente e integrada",
-      "Garantir o direito à educação para transformar vidas e o país",
-      "Fortalecer a saúde com equidade, inovação e soberania",
-      "Ampliar o acesso à cultura e ao esporte como vetores de transformação social",
-      "Fortalecer o direito à cidade",
-      "Promover uma economia mais sustentável, produtiva e digital, para todas e todos",
-      "Segurança alimentar e produção agrícola",
-      "Ampliar a segurança energética e liderar a transição para uma economia de baixo carbono",
-      "Promover a sustentabilidade ambiental e climática",
-      "Valorizar o trabalho em suas múltiplas formas",
-      "Defender a soberania nacional e o protagonismo internacional do Brasil"
     ],
     "planoGoverno": {
       "arquivo": "/planos/lula.pdf",
@@ -289,7 +209,6 @@
       "Nunca exerceu cargo público eletivo.",
       "Teve o registro à Presidência indeferido em 2022, quando concorreria pelo Pros. Disputou a Prefeitura de São Paulo em 2024. Em 2026 concorre pelo PRTB, com Leonardo Avalanche como candidato a vice-presidente."
     ],
-    "temas": [],
     "planoGoverno": null,
     "situacaoRegistro": "Aguardando julgamento",
     "observacao": "Declarado inelegível pelo TRE-SP. O pedido de registro foi protocolado e será analisado pela Justiça Eleitoral. O pacote de propostas de governo publicado pelo TSE não inclui plano desta candidatura."
@@ -317,22 +236,6 @@
       "Empresário, nasceu em São Paulo em 1984. Cursou Direito na USP sem concluir; no registro declarou ao TSE ensino superior incompleto e a ocupação de empresário.",
       "É um dos fundadores do Movimento Brasil Livre (MBL) e preside o Missão, partido que obteve registro no TSE em 2025.",
       "Nunca exerceu cargo público eletivo. Disputa a Presidência pela primeira vez em 2026, com Coronel Medina, policial militar, como candidato a vice-presidente."
-    ],
-    "temas": [
-      "Ajuste fiscal",
-      "Segurança pública",
-      "Pacto federativo",
-      "Lei de Responsabilidade Gerencial",
-      "Economia e assistencialismo",
-      "Infraestrutura",
-      "Saúde",
-      "Cultura",
-      "Educação",
-      "Zonas econômicas especiais",
-      "Terras raras e indústria",
-      "Agricultura e tecnologia",
-      "Política externa",
-      "Desfavelização"
     ],
     "planoGoverno": {
       "arquivo": "/planos/renan-santos.pdf",
@@ -365,34 +268,6 @@
       "Foi deputado federal por Goiás e senador pelo estado. Elegeu-se governador de Goiás em 2018 e reelegeu-se em 2022, governando de 2019 a 2026.",
       "Disputou a Presidência da República em 1989. Em 2026 concorre pelo PSD, ao qual se filiou após deixar o União Brasil, com Gilberto Kassab como candidato a vice-presidente."
     ],
-    "temas": [
-      "Introdução",
-      "Governar um país dividido",
-      "Reformar o sistema político",
-      "Estabilização fiscal",
-      "Uma agenda para o crescimento",
-      "Segurança pública e combate à corrupção",
-      "Agronegócio",
-      "Ciência, tecnologia e inovação",
-      "Cultura",
-      "Defesa nacional e soberania",
-      "Educação",
-      "Energia",
-      "Esporte: saúde, educação, inclusão e alto rendimento",
-      "Indústria: o Brasil que produz, inova e gera empregos",
-      "Infraestrutura",
-      "Meio ambiente",
-      "Mineração estratégica",
-      "Mobilidade urbana",
-      "Mulheres",
-      "Política e proteção social",
-      "Política para o Nordeste: desenvolvimento, água e oportunidades",
-      "Racismo",
-      "Região amazônica",
-      "Relações exteriores e a inserção do Brasil no mundo",
-      "Saúde",
-      "Turismo: desenvolvimento regional, emprego e imagem do Brasil"
-    ],
     "planoGoverno": {
       "arquivo": "/planos/ronaldo-caiado.pdf",
       "titulo": "Muito pra mostrar, nada pra esconder",
@@ -422,23 +297,6 @@
       "Jornalista, nasceu em São Paulo em 1957. No registro declarou ao TSE a ocupação de jornalista e redator.",
       "Participou da fundação do Partido dos Trabalhadores e integrou a corrente Causa Operária, de onde saiu o Partido da Causa Operária, do qual é presidente nacional.",
       "Disputou a Presidência da República em 2002, 2010 e 2014. Em 2026 encabeça novamente a chapa do PCO, com Antônio Carlos como candidato a vice-presidente."
-    ],
-    "temas": [
-      "Parar o roubo dos salários",
-      "Reduzir a jornada e acabar com o desemprego",
-      "Revogar todas as \"reformas\" do golpe de 2016",
-      "Cancelar as privatizações e a destruição da economia nacional",
-      "Fim da destruição dos serviços públicos e dos ataques ao funcionalismo",
-      "Reforma agrária com expropriação do latifúndio e demarcação das terras dos índios",
-      "Fim da especulação, moradia para todos",
-      "Barrar a destruição da educação e conquistar ensino público, gratuito e de qualidade",
-      "Fim do lucro com a doença: saúde pública e gratuita, sob o controle dos trabalhadores",
-      "Abaixo a repressão. Liberdade de expressão e direito de autodefesa",
-      "Fim da ditadura dos bancos e da expropriação do povo",
-      "Abaixo a ditadura do Judiciário e fim do regime antidemocrático",
-      "Fora o imperialismo da Amazônia e da América Latina",
-      "Em defesa do futebol, do carnaval e de todas as manifestações da cultura popular",
-      "Abaixo a política de conciliação. Por um governo dos trabalhadores"
     ],
     "planoGoverno": {
       "arquivo": "/planos/rui-costa-pimenta.pdf",
@@ -471,25 +329,6 @@
       "Atua em movimentos populares, de mulheres e no movimento negro, e integra a Unidade Popular, partido pelo qual concorre.",
       "Foi candidata a vice-presidente da República pela UP em 2022. Em 2026 encabeça a chapa, com Raquel Brício como candidata a vice."
     ],
-    "temas": [
-      "Emprego e renda",
-      "Dívida pública, sistema financeiro e tributação",
-      "Saúde pública e valorização do SUS",
-      "Educação popular e científica",
-      "Combate radical à corrupção",
-      "Emancipação das mulheres trabalhadoras",
-      "Juventude",
-      "Combate às opressões e liberdade de expressão",
-      "Cultura popular e soberania cultural",
-      "Reforma agrária popular e reforma urbana",
-      "Segurança pública, justiça e desmilitarização",
-      "Transporte público e mobilidade urbana",
-      "Memória, verdade, justiça e reparação",
-      "Soberania nacional e fim das privatizações",
-      "Meio ambiente, transição ecológica e defesa da natureza",
-      "Solidariedade internacionalista",
-      "A luta pelo socialismo"
-    ],
     "planoGoverno": {
       "arquivo": "/planos/samara-martins.pdf",
       "titulo": "Programa da Unidade Popular pelo Socialismo",
@@ -521,22 +360,6 @@
       "Sua atuação pública é voltada à defesa e à proteção animal.",
       "Disputou eleições para vereador, deputado estadual e deputado federal sem se eleger. Em 2026 é o primeiro candidato à Presidência lançado pelo Democrata, com a empresária Suêd Haidar como candidata a vice."
     ],
-    "temas": [
-      "Reforma tributária: o Imposto Único Federal",
-      "Trabalho, emprego e renda",
-      "Segurança pública",
-      "Saúde Única",
-      "Proteção e direitos animais",
-      "Agropecuária, sanidade e comércio exterior",
-      "Saúde: atenção primária e o fim da fila",
-      "Educação e formação",
-      "Esporte: formar atleta, não só premiar medalha",
-      "Habitação: casa própria onde a pessoa escolhe morar",
-      "Estado digital, desburocratização e transparência",
-      "Infraestrutura, energia e meio ambiente",
-      "Defesa nacional e guerra ao crime organizado",
-      "Pacto institucional e superação da polarização"
-    ],
     "planoGoverno": {
       "arquivo": "/planos/wilson-grassi.pdf",
       "titulo": "Brasil em Primeiro Lugar — Plano de Governo 2027–2030",
@@ -567,28 +390,6 @@
       "Empresário, nasceu em Araxá, Minas Gerais, em 1964. É formado em Administração pela Fundação Getulio Vargas e atuou por quase três décadas no Grupo Zema, empresa familiar de varejo. No registro declarou ao TSE a ocupação de empresário.",
       "Elegeu-se governador de Minas Gerais em 2018, em sua primeira disputa eleitoral, e reelegeu-se em 2022, governando o estado de 2019 a 2026.",
       "Disputa a Presidência pela primeira vez em 2026, pelo Novo, com o senador Eduardo Girão como candidato a vice-presidente."
-    ],
-    "temas": [
-      "Segurança pública",
-      "Combate à corrupção e aos privilégios",
-      "Reforma do Judiciário e dos órgãos de controle",
-      "Finanças públicas",
-      "Desenvolvimento econômico",
-      "Trabalho e emprego",
-      "Infraestrutura e saneamento",
-      "Minas e energia",
-      "Política externa",
-      "Gestão pública e eficiência no governo",
-      "Agronegócio",
-      "Meio ambiente",
-      "Educação básica",
-      "Educação superior, ciência e tecnologia",
-      "Saúde",
-      "Desenvolvimento social",
-      "Esporte",
-      "Cultura e turismo",
-      "Reforma institucional",
-      "Defesa e segurança nacional"
     ],
     "planoGoverno": {
       "arquivo": "/planos/romeu-zema.pdf",
