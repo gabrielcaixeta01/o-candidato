@@ -1,5 +1,4 @@
-"use client";
-
+import Link from "next/link";
 import { Retrato } from "@/components/Retrato";
 import type { Candidato } from "@/lib/types";
 
@@ -10,21 +9,20 @@ import type { Candidato } from "@/lib/types";
  * mesma posição do número, mesma altura de bio. Nenhum card recebe destaque,
  * tamanho ou cor diferente.
  *
- * O clique vem de um botão sobreposto em vez de um <button> envolvendo tudo:
- * <button> só aceita conteúdo de frase, então embrulhar <h3> e <p> nele
- * produziria HTML inválido e um rótulo confuso para leitores de tela.
+ * O link vem sobreposto em vez de envolver tudo: <a> pode conter blocos, mas
+ * um link com título, bio e imagem dentro vira um rótulo longo e confuso no
+ * leitor de tela. Sobreposto, o alvo continua sendo o card inteiro e o rótulo
+ * é uma frase só.
  */
 export function CandidatoCard({
   candidato,
-  onSelecionar,
   prioridade = false,
 }: {
   candidato: Candidato;
-  onSelecionar: (candidato: Candidato) => void;
   /** Pré-carrega a imagem dos primeiros cards, que compõem o LCP. */
   prioridade?: boolean;
 }) {
-  const { nome, partido, numero, bio } = candidato;
+  const { slug, nome, partido, numero, bio } = candidato;
 
   return (
     <article className="group relative flex h-full w-full flex-col overflow-hidden rounded-xl border border-border bg-card shadow-xs transition duration-300 ease-out hover:-translate-y-1 hover:border-papel-400 hover:shadow-lg focus-within:border-bronze-500/50 motion-reduce:hover:translate-y-0">
@@ -49,18 +47,17 @@ export function CandidatoCard({
       </div>
 
       {/*
-        Botão esticado sobre o card inteiro. `inset-0` garante alvo de toque
+        Link esticado sobre o card inteiro. `inset-0` garante alvo de toque
         muito acima dos 44px recomendados em telas pequenas.
       */}
-      <button
-        type="button"
-        onClick={() => onSelecionar(candidato)}
-        className="absolute inset-0 z-10 cursor-pointer rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze-500"
+      <Link
+        href={`/candidato/${slug}`}
+        className="absolute inset-0 z-10 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze-500"
       >
         <span className="sr-only">
-          {`Abrir perfil de ${nome}, ${partido}, número ${numero}`}
+          {`Ver ficha de ${nome}, ${partido}, número ${numero}`}
         </span>
-      </button>
+      </Link>
     </article>
   );
 }

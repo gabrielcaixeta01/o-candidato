@@ -24,7 +24,29 @@ export interface CreditoFoto {
   origem?: string;
 }
 
+/**
+ * Plano de governo registrado no TSE.
+ *
+ * O PDF é o arquivo que o próprio candidato protocolou, servido do repositório
+ * para que o link não dependa da disponibilidade do CDN do TSE — que só publica
+ * os planos num pacote .zip por unidade eleitoral, sem URL por candidato.
+ */
+export interface PlanoGoverno {
+  /** Caminho do PDF em `public/planos/`. */
+  arquivo: string;
+  /**
+   * Título do documento, transcrito literalmente.
+   * `null` quando a capa é só imagem e o PDF não traz título — a ausência é
+   * do documento, e inventar um rótulo seria descrever o plano por nós.
+   */
+  titulo: string | null;
+  /** Número de páginas do PDF. */
+  paginas: number;
+}
+
 export interface Candidato {
+  /** Identificador na URL: `/candidato/{slug}`. Estável entre publicações. */
+  slug: string;
   /** Nome de urna, exatamente como registrado no TSE. Chave de ordenação. */
   nome: string;
   /** Nome civil completo, quando difere do nome de urna. */
@@ -33,22 +55,51 @@ export interface Candidato {
   partido: string;
   /** Número de urna. */
   numero: number;
-  /** Candidato a vice-presidente, com sigla: "Geraldo Alckmin (PSB)". */
+  /** Nome de urna do candidato a vice, com sigla: "Geraldo Alckmin (PSB)". */
   vice: string;
-  /** Idade em anos na data do registro. `null` quando não confirmada em fonte. */
-  idade: number | null;
+  /**
+   * `SQ_CANDIDATO` do TSE. É a chave que liga esta ficha ao registro oficial
+   * e permite auditar cada campo no DivulgaCandContas.
+   */
+  sqCandidato: string;
+  /** Data de nascimento em ISO 8601. A idade é derivada, nunca armazenada. */
+  nascimento: string;
+  /** Município e UF de nascimento: "Garanhuns, PE". */
+  naturalidade: string;
+  /** Grau de instrução declarado no registro, na redação do TSE. */
+  escolaridade: string;
+  /** Ocupação declarada no registro, na redação do TSE. */
+  ocupacao: string;
   /** Foto oficial creditada. `null` renderiza o retrato de iniciais. */
   foto: CreditoFoto | null;
   /** Biografia factual curta (2 linhas no card). */
   bio: string;
   /**
-   * Temas centrais declarados pelo próprio candidato.
-   * Vazio enquanto não extraídos do plano de governo registrado no TSE —
-   * preencher com invenção violaria o princípio de factualidade.
+   * Resumo factual em parágrafos, para a página do candidato.
+   *
+   * Só trajetória verificável: cargos ocupados com período, formação, eleições
+   * disputadas. Sem adjetivação, sem avaliação de desempenho e sem menção a
+   * posicionamento político — o que o candidato defende está em `temas`, dito
+   * com as palavras dele.
+   */
+  resumo: string[];
+  /**
+   * Títulos dos capítulos do plano de governo registrado, transcritos
+   * literalmente do sumário do PDF.
+   *
+   * São as palavras do próprio candidato, não uma síntese nossa: resumir
+   * propostas exigiria escolher o que é importante, e essa escolha é
+   * justamente o que este projeto não pode fazer. Vazio quando o candidato
+   * não protocolou plano.
    */
   temas: string[];
-  /** URL do plano de governo no DivulgaCandContas, quando disponível. */
-  planoGoverno: string | null;
+  /** Plano registrado no TSE. `null` quando não consta do pacote oficial. */
+  planoGoverno: PlanoGoverno | null;
+  /**
+   * Situação do registro na Justiça Eleitoral, na redação do TSE.
+   * Em agosto de 2026 é idêntica para as 13 chapas.
+   */
+  situacaoRegistro: string;
   /**
    * Observação processual objetiva (ex.: registro sub judice).
    * Descreve o andamento no tribunal, nunca o mérito da candidatura.

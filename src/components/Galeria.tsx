@@ -1,39 +1,25 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Search, X } from "lucide-react";
 import { CandidatoCard } from "@/components/CandidatoCard";
-import { CandidatoSheet } from "@/components/CandidatoSheet";
 import { filtrarCandidatos } from "@/lib/candidatos";
-import type { Candidato, Noticia } from "@/lib/types";
+import type { Candidato } from "@/lib/types";
 
 /**
- * Busca + galeria + folha de detalhes.
+ * Busca + galeria.
  *
  * Recebe a lista já ordenada alfabeticamente pelo servidor e nunca reordena:
  * o filtro apenas remove itens, preservando a ordem original. Ordenar por
  * relevância de busca criaria um ranking implícito.
  */
-export function Galeria({
-  candidatos,
-  noticiasPorCandidato,
-}: {
-  candidatos: Candidato[];
-  noticiasPorCandidato: Record<string, Noticia[]>;
-}) {
+export function Galeria({ candidatos }: { candidatos: Candidato[] }) {
   const [consulta, setConsulta] = useState("");
-  const [selecionado, setSelecionado] = useState<Candidato | null>(null);
 
   const visiveis = useMemo(
     () => filtrarCandidatos(candidatos, consulta),
     [candidatos, consulta],
   );
-
-  const fechar = useCallback(() => setSelecionado(null), []);
-
-  const noticiasDoSelecionado = selecionado
-    ? (noticiasPorCandidato[selecionado.nome] ?? [])
-    : [];
 
   return (
     <section
@@ -86,12 +72,8 @@ export function Galeria({
       {visiveis.length > 0 ? (
         <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {visiveis.map((candidato, indice) => (
-            <li key={`${candidato.nome}-${candidato.numero}`} className="flex">
-              <CandidatoCard
-                candidato={candidato}
-                onSelecionar={setSelecionado}
-                prioridade={indice < 3}
-              />
+            <li key={candidato.slug} className="flex">
+              <CandidatoCard candidato={candidato} prioridade={indice < 3} />
             </li>
           ))}
         </ul>
@@ -100,12 +82,6 @@ export function Galeria({
           Nenhuma candidatura corresponde a “{consulta}”.
         </p>
       )}
-
-      <CandidatoSheet
-        candidato={selecionado}
-        noticias={noticiasDoSelecionado}
-        onFechar={fechar}
-      />
     </section>
   );
 }

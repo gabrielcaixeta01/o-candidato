@@ -4,12 +4,12 @@ import { cn } from "@/lib/utils";
 import type { Candidato } from "@/lib/types";
 
 /**
- * Retrato em 3:4. Preto-e-branco por padrão, colorido no hover do card.
+ * Retrato em 3:4, sempre colorido.
  *
- * O preto-e-branco não é enfeite: as fotos vêm de fontes diferentes, com
- * iluminação e fundos muito distintos, e a dessaturação as coloca no mesmo
- * registro visual. Sem isso, um retrato de estúdio saltaria sobre um registro
- * de evento — uma hierarquia que o projeto não pode produzir.
+ * As fotos vêm de acervos diferentes e chegam com iluminação e fundo bem
+ * distintos. A paridade entre as candidaturas é garantida pelo enquadramento —
+ * mesma proporção, mesmo recorte, mesmo tamanho em todos os lugares — e não
+ * por filtro sobre a imagem.
  *
  * Sem foto, cai num placeholder de iniciais com a mesma proporção e o mesmo
  * peso visual, para que a diagramação não mude.
@@ -49,9 +49,8 @@ export function Retrato({
           */
           className={cn(
             "object-cover object-[50%_22%]",
-            "grayscale transition-[filter,transform] duration-500 ease-out",
-            "group-hover:scale-[1.03] group-hover:grayscale-0",
-            "group-focus-within:grayscale-0",
+            "transition-transform duration-500 ease-out",
+            "group-hover:scale-[1.03] motion-reduce:group-hover:scale-100",
           )}
         />
       ) : (

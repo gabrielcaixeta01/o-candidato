@@ -3,9 +3,22 @@
 Portal factual dos candidatos à Presidência da República em 2026.
 
 Todos os candidatos aparecem em ordem alfabética, com diagramação idêntica.
-O site publica apenas dados verificáveis — partido, número, vice, idade, bio e
+O site publica apenas dados verificáveis — o registro no TSE, um resumo de
+trajetória, os capítulos do plano de governo transcritos do documento oficial e
 manchetes com link para a fonte. Sem ranking, sem pesquisa de intenção de voto,
 sem cor partidária e sem linguagem de opinião.
+
+## Estrutura
+
+| Rota | O que é |
+| --- | --- |
+| `/` | Hero, calendário eleitoral, busca e galeria das 13 candidaturas |
+| `/candidato/[slug]` | Ficha completa, uma por candidatura, pré-renderizada no build |
+
+A ficha traz: retrato creditado, resumo em parágrafos, capítulos do plano de
+governo com link para o PDF registrado, manchetes recentes e uma tabela com o
+registro no TSE (nascimento, naturalidade, escolaridade, ocupação declarada e
+situação do pedido de registro).
 
 ## Rodando
 
@@ -61,13 +74,43 @@ a diagramação não muda.
 > A foto do Renan Santos é a única sem retrato institucional disponível no acervo
 > livre — é uma foto de 2018 auto-publicada. Vale trocar se aparecer uma oficial.
 
-### Temas e planos de governo
+### Planos de governo e temas
 
-`temas` está vazio e `planoGoverno` está `null` em todas as candidaturas: os
-planos registrados no TSE ainda não foram lidos, e preencher por dedução
-violaria o princípio de factualidade do projeto. A aba **Propostas** já trata
-esse caso e aponta para o DivulgaCandContas. Ao extrair os temas de cada plano,
-basta preencher os dois campos — a interface não precisa mudar.
+Os PDFs em `public/planos/` são os planos que os próprios candidatos
+protocolaram, extraídos do pacote oficial do TSE:
+
+```
+https://cdn.tse.jus.br/estatistica/sead/odsele/proposta_governo/proposta_governo_2026_BR.zip
+```
+
+Ficam versionados porque o TSE publica os planos **só em .zip por unidade
+eleitoral** — não existe URL por candidato para linkar. São ~15 MB no total.
+
+`temas` guarda os **títulos dos capítulos transcritos do sumário de cada PDF**.
+Não há resumo do conteúdo, e isso é uma decisão, não uma pendência: sintetizar
+propostas obriga a escolher o que é relevante, e essa escolha é exatamente o que
+o projeto não pode fazer. A única edição sobre o texto original é de
+capitalização — sumários em caixa alta viram caixa normal, sem mudar palavra.
+
+Quem quiser o teor lê o documento: cada ficha linka o PDF e a ficha completa no
+DivulgaCandContas.
+
+> Das 13 candidaturas, 12 têm plano. O pacote do TSE não inclui plano da
+> candidatura de Pablo Marçal; a ficha diz isso explicitamente em vez de deixar
+> a seção vazia.
+
+### Dados do registro
+
+Nascimento, naturalidade, escolaridade, ocupação e situação do registro vêm do
+arquivo oficial de candidaturas:
+
+```
+https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip
+```
+
+`sqCandidato` é o `SQ_CANDIDATO` do TSE — a chave que permite auditar cada campo
+no DivulgaCandContas. A **idade não é armazenada**: é derivada de `nascimento` a
+cada render, porque um número escrito à mão envelhece em silêncio.
 
 ## Atualização automática de notícias
 
@@ -107,11 +150,18 @@ de implementação e não devem ser "otimizadas" sem intenção:
   criaria um ranking implícito.
 - Cards têm foto na mesma proporção, número na mesma posição e bio com altura
   fixa de duas linhas, para que nenhuma candidatura pareça mais importante.
-- Os retratos são exibidos em preto-e-branco (ganham cor no hover). As fotos vêm
-  de fontes distintas, e a dessaturação impede que um retrato de estúdio salte
-  sobre um registro de evento.
+- Toda ficha tem as mesmas seções, na mesma ordem, com o retrato na mesma
+  largura. O `resumo` tem três parágrafos em todas — formação e ocupação,
+  trajetória pública, histórico eleitoral e chapa atual.
+- O resumo descreve trajetória verificável: cargos com período, formação,
+  eleições disputadas. Não avalia gestões nem descreve posicionamento político —
+  o que o candidato defende aparece em **Propostas**, com as palavras dele.
+- Os retratos são coloridos, no mesmo enquadramento e no mesmo tamanho. A
+  paridade vem do recorte, não de filtro sobre a imagem.
 - Bronze (`#8a6a2f`) é o único acento, escolhido por não pertencer a nenhum
   partido brasileiro. Nenhuma cor partidária aparece em lugar nenhum.
+- A navegação entre fichas segue a mesma ordem alfabética e não circula: quem
+  chega na ponta vê só um lado, em vez de um ciclo que sugeriria sequência.
 - Tema claro único, sem variante escura: uma segunda diagramação seria mais um
   lugar onde a paridade entre candidatos poderia quebrar.
 - Campos sem fonte confirmada mostram travessão em vez de estimativa.

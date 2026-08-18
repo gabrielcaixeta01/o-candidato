@@ -12,12 +12,12 @@ export default function Home() {
   // conteúdo muda quando o cron semanal commita novos dados.
   const candidatos = listarCandidatos();
   const calendario = listarCalendario();
-  const { atualizadoEm, porCandidato } = lerNoticias();
+  const { atualizadoEm } = lerNoticias();
 
   return (
     <>
       <Hero calendario={calendario} totalCandidaturas={candidatos.length} />
-      <Galeria candidatos={candidatos} noticiasPorCandidato={porCandidato} />
+      <Galeria candidatos={candidatos} />
       <Rodape atualizadoEm={atualizadoEm} />
     </>
   );

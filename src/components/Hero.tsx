@@ -26,9 +26,10 @@ export function Hero({
 
       <p className="mt-5 max-w-xl text-[0.9375rem] leading-relaxed text-pretty text-tinta-500 sm:mt-6 sm:text-base">
         As {totalCandidaturas} candidaturas registradas no TSE, em ordem
-        alfabética e com a mesma diagramação. Apenas fatos verificáveis:
-        partido, número, vice, idade e notícias com link para a fonte original.
-        Sem análise, sem ranking e sem opinião.
+        alfabética e com a mesma diagramação. Cada ficha traz o registro
+        oficial, os capítulos do plano de governo nas palavras do próprio
+        candidato e manchetes com link para a fonte. Sem análise, sem ranking e
+        sem opinião.
       </p>
 
       <CalendarioEleitoral eventos={calendario} />

@@ -1,10 +1,16 @@
 [
   {
+    "slug": "clariana-barao",
     "nome": "Clariana Barão",
+    "nomeCompleto": "Clariana Zacarkim Barão",
     "partido": "DC",
     "numero": 27,
     "vice": "Fabiana Torquato (DC)",
-    "idade": 39,
+    "sqCandidato": "280002552484",
+    "nascimento": "1987-04-03",
+    "naturalidade": "Cuiabá, MT",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Advogada",
     "foto": {
       "url": "/candidatos/clariana-barao.jpg",
       "credito": "LFLN",
@@ -12,15 +18,38 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Clariana_Zacarkim_Bar%C3%A3o.jpg"
     },
     "bio": "Advogada e presidente do diretório do Democracia Cristã em Mato Grosso. Disputa seu primeiro cargo eletivo.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Advogada, nasceu em Cuiabá em 1987. No registro de candidatura declarou ao TSE ensino superior completo e a ocupação de advogada.",
+      "Preside o diretório estadual do Democracia Cristã em Mato Grosso, partido pelo qual concorre.",
+      "É a primeira vez que disputa um cargo eletivo. Concorre com Fabiana Torquato, também advogada, como candidata a vice-presidente."
+    ],
+    "temas": [
+      "Mulheres e crianças em primeiro lugar",
+      "Economia — prosperidade que protege",
+      "Educação — preparar para o futuro",
+      "Segurança — proteger a vida e garantir liberdade",
+      "Saúde — cuidar antes da doença",
+      "Estado que funciona"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/clariana-barao.pdf",
+      "titulo": "Proteger Hoje, Transformar o Amanhã",
+      "paginas": 15
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "edmilson-costa",
     "nome": "Edmilson Costa",
+    "nomeCompleto": "Edmilson Silva Costa",
     "partido": "PCB",
     "numero": 21,
     "vice": "Cleusa Santos (PCB)",
-    "idade": null,
+    "sqCandidato": "280002551975",
+    "nascimento": "1950-04-08",
+    "naturalidade": "Pedreiras, MA",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Aposentado",
     "foto": {
       "url": "/candidatos/edmilson-costa.jpg",
       "credito": "Diário Liberdade",
@@ -28,16 +57,37 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Edmilson_Costa_-_PCB.jpg"
     },
     "bio": "Doutor em Economia pela Unicamp e dirigente histórico do PCB, militante da legenda desde os anos 1970. Foi candidato a vice-presidente em 2010.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Economista, nasceu em Pedreiras, no Maranhão, em 1950. É doutor em Economia pela Unicamp e autor de livros sobre economia política e capitalismo contemporâneo. No registro declarou ao TSE a ocupação de aposentado.",
+      "Milita no Partido Comunista Brasileiro desde os anos 1970 e integra a direção nacional da legenda.",
+      "Foi candidato a vice-presidente da República em 2010. Em 2026 encabeça a chapa do PCB, tendo Cleusa Santos como candidata a vice."
+    ],
+    "temas": [
+      "Na política",
+      "Na economia",
+      "Na área social e no mundo do trabalho",
+      "Nos serviços públicos e no meio ambiente",
+      "Nas relações internacionais"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/edmilson-costa.pdf",
+      "titulo": "Construir o Poder Popular, rumo ao Socialismo",
+      "paginas": 16
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "augusto-cury",
     "nome": "Escritor Augusto Cury",
     "nomeCompleto": "Augusto Jorge Cury",
     "partido": "Avante",
     "numero": 70,
     "vice": "Júlio Delgado (Avante)",
-    "idade": 67,
+    "sqCandidato": "280002551547",
+    "nascimento": "1958-10-02",
+    "naturalidade": "Colina, SP",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Escritor e crítico",
     "foto": {
       "url": "/candidatos/augusto-cury.jpg",
       "credito": "Lima Andruška",
@@ -45,15 +95,51 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Augusto_Cury,_escritor_(28339139296).jpg"
     },
     "bio": "Psiquiatra, escritor e empresário, autor de livros de psicologia publicados em mais de 70 países. Estreia em disputas eleitorais em 2026.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Psiquiatra e escritor, nasceu em Colina, no interior de São Paulo, em 1958. É autor de livros de psicologia e literatura publicados em dezenas de países, entre eles O Vendedor de Sonhos. No registro declarou ao TSE a ocupação de escritor e crítico.",
+      "Atua também como empresário no setor editorial e de treinamento. Nunca exerceu cargo público eletivo ou de nomeação.",
+      "2026 é sua estreia em disputas eleitorais. Concorre pelo Avante, com o ex-deputado federal Júlio Delgado como candidato a vice-presidente."
+    ],
+    "temas": [
+      "Responsabilidade fiscal e crescimento sustentável",
+      "Estado eficiente e digital",
+      "Brasil empreendedor",
+      "Nova revolução industrial",
+      "Educação para o Brasil do futuro",
+      "Saúde integral",
+      "Segurança pública 4.0",
+      "Agricultura 4.0",
+      "Infraestrutura para o desenvolvimento",
+      "Economia verde e transição energética",
+      "Combate à corrupção e transparência",
+      "Política pública de proteção às mulheres",
+      "Juventude e futuro do trabalho",
+      "Ciência, tecnologia e inteligência artificial",
+      "Relações internacionais e diplomacia estratégica",
+      "Reforma política e institucional",
+      "Desenvolvimento regional e redução das desigualdades",
+      "Cultura, identidade e coesão nacional",
+      "Visão de futuro e projeto de nação"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/augusto-cury.pdf",
+      "titulo": null,
+      "paginas": 200
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "flavio-bolsonaro",
     "nome": "Flávio Bolsonaro",
+    "nomeCompleto": "Flávio Nantes Bolsonaro",
     "partido": "PL",
     "numero": 22,
     "vice": "Alfredo Gaspar (PL)",
-    "idade": 45,
+    "sqCandidato": "280002551544",
+    "nascimento": "1981-04-30",
+    "naturalidade": "Resende, RJ",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Senador",
     "foto": {
       "url": "/candidatos/flavio-bolsonaro.jpg",
       "credito": "Agência Senado",
@@ -61,15 +147,41 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Foto_oficial_do_senador_Fl%C3%A1vio_Bolsonaro_(v._AgSen)_(3x4).jpg"
     },
     "bio": "Senador pelo Rio de Janeiro desde 2019, advogado e empresário. Cumpriu quatro mandatos consecutivos como deputado estadual antes de chegar ao Senado.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Advogado, nasceu em Resende, no Rio de Janeiro, em 1981. No registro declarou ao TSE ensino superior completo e a ocupação de senador.",
+      "Foi deputado estadual no Rio de Janeiro por quatro mandatos consecutivos, de 2003 a 2018. Em 2018 elegeu-se senador pelo estado, mandato que exerce desde 2019.",
+      "Disputa a Presidência pela primeira vez em 2026, pelo PL, com o senador Alfredo Gaspar como candidato a vice-presidente."
+    ],
+    "temas": [
+      "Brasil sem medo",
+      "Brasil por elas",
+      "Brasil sem fila",
+      "Brasil mais barato",
+      "Brasil que prepara",
+      "Brasil que prospera",
+      "Brasil que cresce",
+      "Brasil que cumpre a Constituição",
+      "Brasil que não volta atrás"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/flavio-bolsonaro.pdf",
+      "titulo": null,
+      "paginas": 76
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "hertz-dias",
     "nome": "Hertz Dias",
+    "nomeCompleto": "Hertz da Conceição Dias",
     "partido": "PSTU",
     "numero": 16,
     "vice": "Vanessa Portugal (PSTU)",
-    "idade": 55,
+    "sqCandidato": "280002541457",
+    "nascimento": "1970-10-20",
+    "naturalidade": "São José de Ribamar, MA",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Professor de ensino fundamental",
     "foto": {
       "url": "/candidatos/hertz-dias.jpg",
       "credito": "Romerito Pontes",
@@ -77,16 +189,48 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Hertz_Dias_PSTU.jpg"
     },
     "bio": "Professor de História, rapper e militante do movimento negro. Foi candidato a vice-presidente em 2018 e ao governo do Maranhão em 2022.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Professor de História, nasceu em São José de Ribamar, no Maranhão, em 1970. Também é rapper. No registro declarou ao TSE a ocupação de professor de ensino fundamental.",
+      "Milita no movimento negro e no PSTU, partido pelo qual concorre.",
+      "Foi candidato a vice-presidente da República em 2018, à Prefeitura de São Luís em 2020 e ao governo do Maranhão em 2022. Em 2026 encabeça a chapa do PSTU, com Vanessa Portugal como candidata a vice."
+    ],
+    "temas": [
+      "Trabalhadores de aplicativos e plataformas",
+      "Saúde",
+      "Educação",
+      "Moradia",
+      "Transporte público",
+      "Aposentadoria",
+      "Meio ambiente",
+      "Reforma agrária e trabalhadores do campo",
+      "Negras e negros",
+      "Mulheres",
+      "LGBTQIAPN+",
+      "Povos indígenas",
+      "Imigrantes",
+      "Pessoas com deficiência",
+      "Reestatização das empresas estratégicas",
+      "Soberania digital"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/hertz-dias.pdf",
+      "titulo": "Com os trabalhadores contra o sistema — por um Brasil soberano e socialista",
+      "paginas": 33
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "lula",
     "nome": "Lula",
     "nomeCompleto": "Luiz Inácio Lula da Silva",
     "partido": "PT",
     "numero": 13,
     "vice": "Geraldo Alckmin (PSB)",
-    "idade": 80,
+    "sqCandidato": "280002542548",
+    "nascimento": "1945-10-06",
+    "naturalidade": "Garanhuns, PE",
+    "escolaridade": "Ensino fundamental completo",
+    "ocupacao": "Torneiro mecânico",
     "foto": {
       "url": "/candidatos/lula.jpg",
       "credito": "Ricardo Stuckert/PR",
@@ -94,15 +238,45 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(ombros)_denoise.jpg"
     },
     "bio": "Presidente da República desde 2023, cargo que já ocupou entre 2003 e 2010. Ex-metalúrgico e ex-dirigente sindical, foi deputado federal por São Paulo.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Nasceu em Garanhuns, Pernambuco, em 1945, e migrou para São Paulo na infância. Trabalhou como torneiro mecânico na indústria metalúrgica do ABC paulista — ocupação que voltou a declarar ao TSE no registro de 2026.",
+      "Presidiu o Sindicato dos Metalúrgicos de São Bernardo do Campo e Diadema e participou da fundação do Partido dos Trabalhadores, em 1980. Foi deputado federal por São Paulo entre 1987 e 1991.",
+      "Disputou a Presidência da República em 1989, 1994, 1998, 2002, 2006 e 2022. Governou o país de 2003 a 2010 e voltou ao cargo em 2023. Concorre à reeleição em 2026 pelo PT, com o vice-presidente Geraldo Alckmin (PSB) novamente na chapa."
+    ],
+    "temas": [
+      "Fortalecer a democracia, a participação social e modernizar o Estado",
+      "Combater as desigualdades",
+      "Proteger a vida com uma segurança pública mais eficiente e integrada",
+      "Garantir o direito à educação para transformar vidas e o país",
+      "Fortalecer a saúde com equidade, inovação e soberania",
+      "Ampliar o acesso à cultura e ao esporte como vetores de transformação social",
+      "Fortalecer o direito à cidade",
+      "Promover uma economia mais sustentável, produtiva e digital, para todas e todos",
+      "Segurança alimentar e produção agrícola",
+      "Ampliar a segurança energética e liderar a transição para uma economia de baixo carbono",
+      "Promover a sustentabilidade ambiental e climática",
+      "Valorizar o trabalho em suas múltiplas formas",
+      "Defender a soberania nacional e o protagonismo internacional do Brasil"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/lula.pdf",
+      "titulo": "Diretrizes para o programa de transformação do Brasil: um país soberano, democrático, desenvolvido, sustentável e criativo",
+      "paginas": 84
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "pablo-marcal",
     "nome": "Pablo Marçal",
+    "nomeCompleto": "Pablo Henrique Costa Marçal",
     "partido": "PRTB",
     "numero": 28,
     "vice": "Leonardo Avalanche (PRTB)",
-    "idade": 39,
+    "sqCandidato": "280002553884",
+    "nascimento": "1987-04-18",
+    "naturalidade": "Goiânia, GO",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Diretor de empresas",
     "foto": {
       "url": "/candidatos/pablo-marcal.jpg",
       "credito": "Kim Kataguiri",
@@ -110,16 +284,28 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Pablo_Mar%C3%A7al_entrevista_Kim_Kataguiri_(cropped).jpg"
     },
     "bio": "Empresário e influenciador digital, disputou a Prefeitura de São Paulo em 2024. Havia tentado concorrer à Presidência em 2022, pelo Pros.",
+    "resumo": [
+      "Empresário, nasceu em Goiânia em 1987. Atua na produção de cursos e conteúdo digital nas áreas de negócios e desenvolvimento pessoal. No registro declarou ao TSE ensino superior completo e a ocupação de diretor de empresas.",
+      "Nunca exerceu cargo público eletivo.",
+      "Teve o registro à Presidência indeferido em 2022, quando concorreria pelo Pros. Disputou a Prefeitura de São Paulo em 2024. Em 2026 concorre pelo PRTB, com Leonardo Avalanche como candidato a vice-presidente."
+    ],
     "temas": [],
     "planoGoverno": null,
-    "observacao": "Declarado inelegível pelo TRE-SP. O pedido de registro foi protocolado e será analisado pela Justiça Eleitoral."
+    "situacaoRegistro": "Aguardando julgamento",
+    "observacao": "Declarado inelegível pelo TRE-SP. O pedido de registro foi protocolado e será analisado pela Justiça Eleitoral. O pacote de propostas de governo publicado pelo TSE não inclui plano desta candidatura."
   },
   {
+    "slug": "renan-santos",
     "nome": "Renan Santos",
+    "nomeCompleto": "Renan Antonio Ferreira dos Santos",
     "partido": "Missão",
     "numero": 14,
-    "vice": "Coronel Aroldo Medina (Missão)",
-    "idade": 42,
+    "vice": "Coronel Medina (Missão)",
+    "sqCandidato": "280002540694",
+    "nascimento": "1984-02-14",
+    "naturalidade": "São Paulo, SP",
+    "escolaridade": "Superior incompleto",
+    "ocupacao": "Empresário",
     "foto": {
       "url": "/candidatos/renan-santos.png",
       "credito": "Joao.maestro2023",
@@ -127,15 +313,46 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Renan.png"
     },
     "bio": "Fundador do Movimento Brasil Livre (MBL) e presidente nacional do Missão, partido registrado pelo TSE em 2025. Empresário, nunca exerceu cargo eletivo.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Empresário, nasceu em São Paulo em 1984. Cursou Direito na USP sem concluir; no registro declarou ao TSE ensino superior incompleto e a ocupação de empresário.",
+      "É um dos fundadores do Movimento Brasil Livre (MBL) e preside o Missão, partido que obteve registro no TSE em 2025.",
+      "Nunca exerceu cargo público eletivo. Disputa a Presidência pela primeira vez em 2026, com Coronel Medina, policial militar, como candidato a vice-presidente."
+    ],
+    "temas": [
+      "Ajuste fiscal",
+      "Segurança pública",
+      "Pacto federativo",
+      "Lei de Responsabilidade Gerencial",
+      "Economia e assistencialismo",
+      "Infraestrutura",
+      "Saúde",
+      "Cultura",
+      "Educação",
+      "Zonas econômicas especiais",
+      "Terras raras e indústria",
+      "Agricultura e tecnologia",
+      "Política externa",
+      "Desfavelização"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/renan-santos.pdf",
+      "titulo": "O Futuro é Glorioso — resumo executivo do Livro Amarelo",
+      "paginas": 51
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "ronaldo-caiado",
     "nome": "Ronaldo Caiado",
+    "nomeCompleto": "Ronaldo Ramos Caiado",
     "partido": "PSD",
     "numero": 55,
     "vice": "Gilberto Kassab (PSD)",
-    "idade": 76,
+    "sqCandidato": "280002551932",
+    "nascimento": "1949-09-25",
+    "naturalidade": "Anápolis, GO",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Médico",
     "foto": {
       "url": "/candidatos/ronaldo-caiado.jpg",
       "credito": "Bianca Kida",
@@ -143,15 +360,57 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Foto_oficial_do_governador_de_Goi%C3%A1s,_Ronaldo_Caiado_em_2023_(ombros).jpg"
     },
     "bio": "Médico, governou Goiás entre 2019 e 2026. Foi deputado federal e senador, e já havia disputado a Presidência em 1989.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Médico ortopedista, nasceu em Anápolis, Goiás, em 1949. No registro declarou ao TSE a ocupação de médico.",
+      "Foi deputado federal por Goiás e senador pelo estado. Elegeu-se governador de Goiás em 2018 e reelegeu-se em 2022, governando de 2019 a 2026.",
+      "Disputou a Presidência da República em 1989. Em 2026 concorre pelo PSD, ao qual se filiou após deixar o União Brasil, com Gilberto Kassab como candidato a vice-presidente."
+    ],
+    "temas": [
+      "Introdução",
+      "Governar um país dividido",
+      "Reformar o sistema político",
+      "Estabilização fiscal",
+      "Uma agenda para o crescimento",
+      "Segurança pública e combate à corrupção",
+      "Agronegócio",
+      "Ciência, tecnologia e inovação",
+      "Cultura",
+      "Defesa nacional e soberania",
+      "Educação",
+      "Energia",
+      "Esporte: saúde, educação, inclusão e alto rendimento",
+      "Indústria: o Brasil que produz, inova e gera empregos",
+      "Infraestrutura",
+      "Meio ambiente",
+      "Mineração estratégica",
+      "Mobilidade urbana",
+      "Mulheres",
+      "Política e proteção social",
+      "Política para o Nordeste: desenvolvimento, água e oportunidades",
+      "Racismo",
+      "Região amazônica",
+      "Relações exteriores e a inserção do Brasil no mundo",
+      "Saúde",
+      "Turismo: desenvolvimento regional, emprego e imagem do Brasil"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/ronaldo-caiado.pdf",
+      "titulo": "Muito pra mostrar, nada pra esconder",
+      "paginas": 100
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "rui-costa-pimenta",
     "nome": "Rui Costa Pimenta",
     "partido": "PCO",
     "numero": 29,
-    "vice": "Antônio Carlos Silva (PCO)",
-    "idade": 69,
+    "vice": "Antônio Carlos (PCO)",
+    "sqCandidato": "280002552487",
+    "nascimento": "1957-06-25",
+    "naturalidade": "São Paulo, SP",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Jornalista e redator",
     "foto": {
       "url": "/candidatos/rui-costa-pimenta.jpg",
       "credito": "Calloshccp",
@@ -159,16 +418,47 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Rui_Costa_Pimenta_Close.jpg"
     },
     "bio": "Jornalista e presidente nacional do PCO. Participou da fundação do PT e concorreu à Presidência em 2002, 2010 e 2014.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Jornalista, nasceu em São Paulo em 1957. No registro declarou ao TSE a ocupação de jornalista e redator.",
+      "Participou da fundação do Partido dos Trabalhadores e integrou a corrente Causa Operária, de onde saiu o Partido da Causa Operária, do qual é presidente nacional.",
+      "Disputou a Presidência da República em 2002, 2010 e 2014. Em 2026 encabeça novamente a chapa do PCO, com Antônio Carlos como candidato a vice-presidente."
+    ],
+    "temas": [
+      "Parar o roubo dos salários",
+      "Reduzir a jornada e acabar com o desemprego",
+      "Revogar todas as \"reformas\" do golpe de 2016",
+      "Cancelar as privatizações e a destruição da economia nacional",
+      "Fim da destruição dos serviços públicos e dos ataques ao funcionalismo",
+      "Reforma agrária com expropriação do latifúndio e demarcação das terras dos índios",
+      "Fim da especulação, moradia para todos",
+      "Barrar a destruição da educação e conquistar ensino público, gratuito e de qualidade",
+      "Fim do lucro com a doença: saúde pública e gratuita, sob o controle dos trabalhadores",
+      "Abaixo a repressão. Liberdade de expressão e direito de autodefesa",
+      "Fim da ditadura dos bancos e da expropriação do povo",
+      "Abaixo a ditadura do Judiciário e fim do regime antidemocrático",
+      "Fora o imperialismo da Amazônia e da América Latina",
+      "Em defesa do futebol, do carnaval e de todas as manifestações da cultura popular",
+      "Abaixo a política de conciliação. Por um governo dos trabalhadores"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/rui-costa-pimenta.pdf",
+      "titulo": "Programa de Luta · Eleições 2026",
+      "paginas": 7
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "samara",
     "nome": "Samara",
-    "nomeCompleto": "Samara Martins",
+    "nomeCompleto": "Samara Martins da Silva Feitosa",
     "partido": "UP",
     "numero": 80,
     "vice": "Raquel Brício (UP)",
-    "idade": 38,
+    "sqCandidato": "280002538811",
+    "nascimento": "1987-08-31",
+    "naturalidade": "Belo Horizonte, MG",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Odontóloga",
     "foto": {
       "url": "/candidatos/samara-martins.jpg",
       "credito": "Reprodução/Jornal A Verdade",
@@ -176,16 +466,49 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Samara_Martins_UP.jpg"
     },
     "bio": "Dentista do SUS, atua em movimentos populares, de mulheres e do movimento negro. Foi candidata a vice-presidente pela Unidade Popular em 2022.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Odontóloga, nasceu em Belo Horizonte em 1987 e atende pelo SUS. No registro declarou ao TSE ensino superior completo e a ocupação de odontóloga.",
+      "Atua em movimentos populares, de mulheres e no movimento negro, e integra a Unidade Popular, partido pelo qual concorre.",
+      "Foi candidata a vice-presidente da República pela UP em 2022. Em 2026 encabeça a chapa, com Raquel Brício como candidata a vice."
+    ],
+    "temas": [
+      "Emprego e renda",
+      "Dívida pública, sistema financeiro e tributação",
+      "Saúde pública e valorização do SUS",
+      "Educação popular e científica",
+      "Combate radical à corrupção",
+      "Emancipação das mulheres trabalhadoras",
+      "Juventude",
+      "Combate às opressões e liberdade de expressão",
+      "Cultura popular e soberania cultural",
+      "Reforma agrária popular e reforma urbana",
+      "Segurança pública, justiça e desmilitarização",
+      "Transporte público e mobilidade urbana",
+      "Memória, verdade, justiça e reparação",
+      "Soberania nacional e fim das privatizações",
+      "Meio ambiente, transição ecológica e defesa da natureza",
+      "Solidariedade internacionalista",
+      "A luta pelo socialismo"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/samara-martins.pdf",
+      "titulo": "Programa da Unidade Popular pelo Socialismo",
+      "paginas": 67
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "wilson-grassi",
     "nome": "Veterinário Wilson Grassi",
-    "nomeCompleto": "Wilson Grassi",
+    "nomeCompleto": "Wilson Grassi Junior",
     "partido": "Democrata",
     "numero": 35,
     "vice": "Suêd Haidar (Democrata)",
-    "idade": 55,
+    "sqCandidato": "280002548139",
+    "nascimento": "1970-03-13",
+    "naturalidade": "São Paulo, SP",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Veterinário",
     "foto": {
       "url": "/candidatos/wilson-grassi.jpg",
       "credito": "Portal de Dados Abertos do TSE",
@@ -193,16 +516,46 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Wilson_Grassi_J%C3%BAnior_2024.jpg"
     },
     "bio": "Veterinário com atuação pública voltada à defesa e à proteção animal. Disputou eleições para vereador, deputado estadual e deputado federal.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Médico-veterinário, nasceu em São Paulo em 1970. No registro declarou ao TSE ensino superior completo e a ocupação de veterinário.",
+      "Sua atuação pública é voltada à defesa e à proteção animal.",
+      "Disputou eleições para vereador, deputado estadual e deputado federal sem se eleger. Em 2026 é o primeiro candidato à Presidência lançado pelo Democrata, com a empresária Suêd Haidar como candidata a vice."
+    ],
+    "temas": [
+      "Reforma tributária: o Imposto Único Federal",
+      "Trabalho, emprego e renda",
+      "Segurança pública",
+      "Saúde Única",
+      "Proteção e direitos animais",
+      "Agropecuária, sanidade e comércio exterior",
+      "Saúde: atenção primária e o fim da fila",
+      "Educação e formação",
+      "Esporte: formar atleta, não só premiar medalha",
+      "Habitação: casa própria onde a pessoa escolhe morar",
+      "Estado digital, desburocratização e transparência",
+      "Infraestrutura, energia e meio ambiente",
+      "Defesa nacional e guerra ao crime organizado",
+      "Pacto institucional e superação da polarização"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/wilson-grassi.pdf",
+      "titulo": "Brasil em Primeiro Lugar — Plano de Governo 2027–2030",
+      "paginas": 58
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   },
   {
+    "slug": "zema",
     "nome": "Zema",
     "nomeCompleto": "Romeu Zema Neto",
     "partido": "Novo",
     "numero": 30,
     "vice": "Eduardo Girão (Novo)",
-    "idade": 61,
+    "sqCandidato": "280002539826",
+    "nascimento": "1964-10-28",
+    "naturalidade": "Araxá, MG",
+    "escolaridade": "Superior completo",
+    "ocupacao": "Empresário",
     "foto": {
       "url": "/candidatos/romeu-zema.jpg",
       "credito": "Andressa Anholete/Agência Senado",
@@ -210,7 +563,38 @@
       "origem": "https://commons.wikimedia.org/wiki/File:Romeu_Zema,_December_2024_(cropped).jpg"
     },
     "bio": "Empresário, governou Minas Gerais entre 2019 e 2026. Formado em Administração pela FGV, atuou por quase três décadas no Grupo Zema.",
-    "temas": [],
-    "planoGoverno": null
+    "resumo": [
+      "Empresário, nasceu em Araxá, Minas Gerais, em 1964. É formado em Administração pela Fundação Getulio Vargas e atuou por quase três décadas no Grupo Zema, empresa familiar de varejo. No registro declarou ao TSE a ocupação de empresário.",
+      "Elegeu-se governador de Minas Gerais em 2018, em sua primeira disputa eleitoral, e reelegeu-se em 2022, governando o estado de 2019 a 2026.",
+      "Disputa a Presidência pela primeira vez em 2026, pelo Novo, com o senador Eduardo Girão como candidato a vice-presidente."
+    ],
+    "temas": [
+      "Segurança pública",
+      "Combate à corrupção e aos privilégios",
+      "Reforma do Judiciário e dos órgãos de controle",
+      "Finanças públicas",
+      "Desenvolvimento econômico",
+      "Trabalho e emprego",
+      "Infraestrutura e saneamento",
+      "Minas e energia",
+      "Política externa",
+      "Gestão pública e eficiência no governo",
+      "Agronegócio",
+      "Meio ambiente",
+      "Educação básica",
+      "Educação superior, ciência e tecnologia",
+      "Saúde",
+      "Desenvolvimento social",
+      "Esporte",
+      "Cultura e turismo",
+      "Reforma institucional",
+      "Defesa e segurança nacional"
+    ],
+    "planoGoverno": {
+      "arquivo": "/planos/romeu-zema.pdf",
+      "titulo": "Plano Implacável — propostas concretas para os maiores problemas do país",
+      "paginas": 81
+    },
+    "situacaoRegistro": "Aguardando julgamento"
   }
 ]

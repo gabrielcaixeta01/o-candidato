@@ -20,6 +20,27 @@ export function listarCandidatos(): Candidato[] {
   );
 }
 
+export function candidatoPorSlug(slug: string): Candidato | undefined {
+  return (candidatosData as Candidato[]).find((c) => c.slug === slug);
+}
+
+/**
+ * Vizinhos na ordem alfabética, para navegar entre fichas sem voltar à lista.
+ * `null` nas pontas — a lista não circula, para não sugerir um ciclo ou uma
+ * ordem de importância.
+ */
+export function vizinhosDe(candidato: Candidato): {
+  anterior: Candidato | null;
+  proximo: Candidato | null;
+} {
+  const lista = listarCandidatos();
+  const i = lista.findIndex((c) => c.slug === candidato.slug);
+  return {
+    anterior: i > 0 ? lista[i - 1] : null,
+    proximo: i >= 0 && i < lista.length - 1 ? lista[i + 1] : null,
+  };
+}
+
 export function listarCalendario(): EventoEleitoral[] {
   return [...(calendarioData as EventoEleitoral[])].sort((a, b) =>
     a.data.localeCompare(b.data),
@@ -49,7 +70,7 @@ export function normalizar(texto: string): string {
     .trim();
 }
 
-/** Busca por nome, partido, número ou tema declarado. */
+/** Busca por nome, partido, número ou tema declarado no plano de governo. */
 export function filtrarCandidatos(
   candidatos: Candidato[],
   consulta: string,
@@ -65,6 +86,7 @@ export function filtrarCandidatos(
       String(c.numero),
       c.vice,
       c.bio,
+      c.ocupacao,
       ...c.temas,
     ];
     return campos.some((campo) => normalizar(campo).includes(termo));
@@ -97,6 +119,22 @@ export function iniciaisDe(nome: string): string {
     .map((p) => p[0])
     .join("")
     .toUpperCase();
+}
+
+/**
+ * Idade em anos completos, derivada da data de nascimento registrada no TSE.
+ *
+ * A idade não é armazenada de propósito: um número escrito à mão envelhece em
+ * silêncio e passa a divergir do registro. O commit semanal do cron republica
+ * o site, então o valor não fica defasado por muito tempo.
+ */
+export function idadeDe(nascimentoIso: string, referencia = new Date()): number {
+  const [ano, mes, dia] = nascimentoIso.split("-").map(Number);
+  let idade = referencia.getUTCFullYear() - ano;
+  const mesAtual = referencia.getUTCMonth() + 1;
+  const diaAtual = referencia.getUTCDate();
+  if (mesAtual < mes || (mesAtual === mes && diaAtual < dia)) idade -= 1;
+  return idade;
 }
 
 /** "4 de outubro de 2026" a partir de "2026-10-04". */
