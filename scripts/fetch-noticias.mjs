@@ -27,14 +27,24 @@ const RAIZ = join(AQUI, "..");
 const CANDIDATOS_JSON = join(RAIZ, "src/data/candidatos.json");
 const NOTICIAS_JSON = join(RAIZ, "src/data/noticias.json");
 
-const FONTE = process.env.FONTE_NOTICIAS ?? "rss";
-const RSS_TEMPLATE =
-  process.env.RSS_TEMPLATE ??
-  "https://news.google.com/rss/search?q={consulta}&hl=pt-BR&gl=BR&ceid=BR:pt-419";
-const NEWSAPI_URL = process.env.NEWSAPI_URL ?? "https://newsapi.org/v2/everything";
-const NEWSAPI_KEY = process.env.NEWSAPI_KEY ?? "";
-const MAX_POR_CANDIDATO = Number(process.env.MAX_POR_CANDIDATO ?? 6);
-const JANELA_DIAS = Number(process.env.JANELA_DIAS ?? 45);
+// O workflow sempre define estas envs a partir de `vars.*`; quando a variável
+// não está configurada no repositório, o GitHub Actions injeta string vazia
+// (não omite a env), então `??` sozinho não aplicaria o padrão. Por isso
+// tratamos "" como "não configurado" também.
+function envOuPadrao(nome, padrao) {
+  const valor = process.env[nome];
+  return valor ? valor : padrao;
+}
+
+const FONTE = envOuPadrao("FONTE_NOTICIAS", "rss");
+const RSS_TEMPLATE = envOuPadrao(
+  "RSS_TEMPLATE",
+  "https://news.google.com/rss/search?q={consulta}&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+);
+const NEWSAPI_URL = envOuPadrao("NEWSAPI_URL", "https://newsapi.org/v2/everything");
+const NEWSAPI_KEY = envOuPadrao("NEWSAPI_KEY", "");
+const MAX_POR_CANDIDATO = Number(envOuPadrao("MAX_POR_CANDIDATO", "6"));
+const JANELA_DIAS = Number(envOuPadrao("JANELA_DIAS", "45"));
 
 const PAUSA_MS = 1200;
 const TIMEOUT_MS = 15000;
