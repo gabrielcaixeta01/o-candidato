@@ -169,3 +169,33 @@ export interface EventoEleitoral {
   /** Detalhe factual curto, quando a data sozinha não se explica. */
   detalhe?: string;
 }
+
+/**
+ * Cargo distrital sem ficha dedicada (Governador, Senador do DF) — só o
+ * resumo breve do wizard. Deliberadamente um subconjunto de `Candidato`: sem
+ * `slug`, `bio`, `resumo`, `planoGoverno` — campos que só existem porque há
+ * uma página própria para consumi-los.
+ */
+export interface CandidatoCargo {
+  /** Nome de urna. */
+  nome: string;
+  numero: number;
+  partido: string;
+  /** Só para Governador; formato "Nome (Partido)". Ausente quando o partido
+   * do vice não foi confirmado por nenhuma fonte. */
+  vice?: string;
+  /** Só para Senador: os dois suplentes da chapa, formato "Nome (Partido)". */
+  suplentes?: string[];
+  /** Nome da coligação/federação, quando houver. Ausente em candidatura isolada. */
+  coligacao?: string;
+  /** Situação do registro na Justiça Eleitoral, na redação do TSE. */
+  situacaoRegistro: string;
+}
+
+/** `src/data/cargos-df.json` — candidaturas a Governador e Senador do DF. */
+export interface ArquivoCargosDF {
+  /** Data (YYYY-MM-DD) da última conferência dos dados na fonte oficial. */
+  atualizadoEm: string;
+  governador: CandidatoCargo[];
+  senador: CandidatoCargo[];
+}

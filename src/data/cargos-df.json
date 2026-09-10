@@ -1,0 +1,179 @@
+{
+  "atualizadoEm": "2026-09-10",
+  "governador": [
+    {
+      "nome": "Arruda",
+      "numero": 55,
+      "partido": "PSD",
+      "vice": "Luiz Pitiman (PSD)",
+      "coligacao": "Resgatar Brasília (PSD/Avante)",
+      "situacaoRegistro": "Indeferido em prazo recursal ou com recurso"
+    },
+    {
+      "nome": "Cappelli",
+      "numero": 40,
+      "partido": "PSB",
+      "vice": "Sofia Carvalho (PSB)",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Celina Leão",
+      "numero": 11,
+      "partido": "PP",
+      "vice": "Gustavo Rocha (PP)",
+      "coligacao": "Propósito e Ação (Republicanos/MDB/Podemos/PL/DC/Mobiliza/Democrata/PRD-Solidariedade/União-PP)",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Elisson",
+      "numero": 36,
+      "partido": "Agir",
+      "vice": "Subtenente Sergio Prado (Agir)",
+      "situacaoRegistro": "Aguardando julgamento"
+    },
+    {
+      "nome": "Expedito Mendonça",
+      "numero": 29,
+      "partido": "PCO",
+      "vice": "Valmir Barbosa (PCO)",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Kiko Caputo",
+      "numero": 30,
+      "partido": "Novo",
+      "vice": "Delegado Rafael Sampaio (Novo)",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Leandro Grass",
+      "numero": 13,
+      "partido": "PT",
+      "vice": "Dora Gomes (PV)",
+      "coligacao": "DF do Povo",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Paula Belmonte",
+      "numero": 45,
+      "partido": "PSDB",
+      "vice": "Juiz Everardo Ribeiro (PSDB)",
+      "coligacao": "Federação PSDB Cidadania",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Professor Robson",
+      "numero": 16,
+      "partido": "PSTU",
+      "vice": "Guillen (PSTU)",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Professora Samara Mineiro",
+      "numero": 80,
+      "partido": "UP",
+      "vice": "Thaís Oliveira",
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Rico Pinheiro",
+      "numero": 28,
+      "partido": "PRTB",
+      "vice": "Cristiane Barros",
+      "situacaoRegistro": "Aguardando julgamento"
+    }
+  ],
+  "senador": [
+    {
+      "nome": "Avenir Rosa",
+      "numero": 355,
+      "partido": "Democrata",
+      "suplentes": ["Marco Aurélio (Democrata)", "Sebastião Geronimo (Democrata)"],
+      "situacaoRegistro": "Indeferido em prazo recursal ou com recurso"
+    },
+    {
+      "nome": "Bia Kicis",
+      "numero": 223,
+      "partido": "PL",
+      "suplentes": ["Samuel Kicis (PL)", "Renato Figueiredo (PL)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "David Horn",
+      "numero": 290,
+      "partido": "PCO",
+      "suplentes": ["Mauro Sousa (PCO)", "Ricardo Machado (PCO)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Erika Kokay",
+      "numero": 131,
+      "partido": "PT",
+      "suplentes": ["Giulia Tadini (PSOL)", "Samuel Domingues (PT)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Guto Felício dos Santos",
+      "numero": 456,
+      "partido": "PSDB",
+      "suplentes": ["Luciana Loureiro (PSDB)", "Professor Tatá (PSDB)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Leila do Vôlei",
+      "numero": 123,
+      "partido": "PDT",
+      "suplentes": ["Raphael Sodré (Rede)", "Tetê Monteiro (PSOL)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Marley",
+      "numero": 700,
+      "partido": "Avante",
+      "suplentes": ["Diego (Avante)", "Coronel Leite (Avante)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Michelle Bolsonaro",
+      "numero": 222,
+      "partido": "PL",
+      "suplentes": ["Diego Torres (PL)", "Cristian Viana (Podemos)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Professor Guilherme Amorim",
+      "numero": 800,
+      "partido": "UP",
+      "suplentes": ["Tadeu Toniatti (UP)", "Ivone Mineiro (UP)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Ronaldo Fonseca",
+      "numero": 555,
+      "partido": "PSD",
+      "suplentes": ["Professora Eunice Santos (PSD)", "Dr. Antonio (PSD)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Sebastião Coelho",
+      "numero": 300,
+      "partido": "Novo",
+      "suplentes": ["Ibi Batista (Novo)", "Coronel Leonardo (Novo)"],
+      "situacaoRegistro": "Deferido"
+    },
+    {
+      "nome": "Tiago",
+      "numero": 360,
+      "partido": "Agir",
+      "suplentes": ["2º Sgt. Thiago Melo (Agir)", "1º Sgt. Alexandre (Agir)"],
+      "situacaoRegistro": "Aguardando julgamento"
+    },
+    {
+      "nome": "Zanata",
+      "numero": 161,
+      "partido": "PSTU",
+      "suplentes": ["Edson Da Silva (PSTU)", "Renato (PSTU)"],
+      "situacaoRegistro": "Deferido"
+    }
+  ]
+}

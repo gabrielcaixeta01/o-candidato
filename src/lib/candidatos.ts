@@ -3,11 +3,14 @@ import noticiasData from "@/data/noticias.json";
 import calendarioData from "@/data/calendario.json";
 import propostasData from "@/data/propostas.json";
 import espectroData from "@/data/espectro.json";
+import cargosDfData from "@/data/cargos-df.json";
 import type {
   ArquivoEspectro,
   ArquivoNoticias,
   ArquivoPropostas,
+  ArquivoCargosDF,
   Candidato,
+  CandidatoCargo,
   ClassificacaoEspectro,
   EventoEleitoral,
   FonteEspectro,
@@ -198,4 +201,18 @@ export function formatarDataCurta(iso: string): string {
       timeZone: "UTC",
     })
     .replace(".", "");
+}
+
+/** Candidatos a Governador do DF, em ordem alfabética pelo nome de urna. */
+export function listarGovernadores(): CandidatoCargo[] {
+  return [...(cargosDfData as ArquivoCargosDF).governador].sort((a, b) =>
+    a.nome.localeCompare(b.nome, "pt-BR"),
+  );
+}
+
+/** Candidatos a Senador do DF, em ordem alfabética pelo nome de urna. */
+export function listarSenadores(): CandidatoCargo[] {
+  return [...(cargosDfData as ArquivoCargosDF).senador].sort((a, b) =>
+    a.nome.localeCompare(b.nome, "pt-BR"),
+  );
 }
