@@ -1,4 +1,5 @@
 import { CalendarioEleitoral } from "@/components/CalendarioEleitoral";
+import { EtapaIndicador } from "@/components/EtapaNav";
 import type { EventoEleitoral } from "@/lib/types";
 
 export function Hero({
@@ -19,7 +20,9 @@ export function Hero({
         <p className="rotulo text-bronze-500">O Candidato</p>
       </div>
 
-      <h1 className="max-w-3xl font-serif text-[2.125rem] leading-[1.08] tracking-[-0.015em] text-balance text-tinta-900 sm:text-5xl lg:text-[3.75rem]">
+      <EtapaIndicador atual="presidente" />
+
+      <h1 className="mt-3 max-w-3xl font-serif text-[2.125rem] leading-[1.08] tracking-[-0.015em] text-balance text-tinta-900 sm:text-5xl lg:text-[3.75rem]">
         Quem disputa a Presidência em{" "}
         <span className="text-bronze-500">2026</span>
       </h1>
