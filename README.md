@@ -12,8 +12,18 @@ sem cor partidária e sem linguagem de opinião.
 
 | Rota | O que é |
 | --- | --- |
-| `/` | Hero, calendário eleitoral, busca e galeria das 13 candidaturas |
+| `/` | Hero, calendário eleitoral, busca e galeria das 13 candidaturas — etapa 1 de 4 (Presidente) da jornada do eleitor |
 | `/candidato/[slug]` | Ficha completa, uma por candidatura, pré-renderizada no build |
+| `/governador` | Etapa 2 de 4: resumo das candidaturas a Governador do DF (sem ficha dedicada) |
+| `/senador` | Etapa 3 de 4: resumo das candidaturas a Senador pelo DF (sem ficha dedicada) |
+| `/resumo` | Etapa 4 de 4: recapitulação dos 4 cargos que o eleitor do DF vota em 2026 |
+
+As quatro rotas formam um wizard com navegação "etapa anterior/próxima"
+(`src/lib/etapas.ts`, `src/components/EtapaNav.tsx`). Governador e Senador
+mostram só nome, número, partido, situação do registro e vice/suplentes —
+não têm ficha própria como Presidente. O corte é só o Distrito Federal: não
+há seletor de estado/cidade, e Deputado Federal e Deputado Distrital ficam
+de fora (centenas de candidatos cada, exigem um desenho de lista à parte).
 
 A ficha traz: retrato creditado, resumo de trajetória, posicionamento do
 partido segundo levantamentos externos, capítulos do plano de governo com
@@ -41,6 +51,7 @@ Tudo vive em JSON versionado. A página é estática e só muda quando o JSON mu
 | `src/data/propostas.json` | Planos de governo registrados no TSE | à mão |
 | `src/data/espectro.json` | Levantamentos de terceiros sobre os partidos | à mão |
 | `src/data/calendario.json` | Calendário eleitoral do TSE | à mão |
+| `src/data/cargos-df.json` | Registros do TSE (Governador) + imprensa (suplentes de Senador e parte dos vices) | à mão |
 | `src/data/noticias.json` | RSS / News API | `scripts/fetch-noticias.mjs` |
 
 Os tipos estão em [`src/lib/types.ts`](src/lib/types.ts), com a regra de cada campo.
@@ -153,6 +164,17 @@ https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.
 `sqCandidato` é o `SQ_CANDIDATO` do TSE — a chave que permite auditar cada campo
 no DivulgaCandContas. A **idade não é armazenada**: é derivada de `nascimento` a
 cada render, porque um número escrito à mão envelhece em silêncio.
+
+### Governador e Senador do DF
+
+Nome, número, partido, situação de registro e coligação de Governador vêm
+direto da API do DivulgaCandContas do TSE
+(`https://divulgacandcontas.tse.jus.br/divulga/#/candidato/CENTROOESTE/DF/20322002026`),
+consultada em 10/09/2026. Os suplentes de cada chapa de Senador e o partido
+de alguns vices de Governador não estavam confirmáveis nessa consulta e
+vieram de imprensa (Senado Notícias, que credita as fotos ao TSE, e Terra) —
+por isso um campo ausente no JSON (`vice` sem partido, por exemplo) significa
+que nenhuma fonte confirmou aquele dado, nunca que ele foi chutado.
 
 ## Atualização automática de notícias
 
